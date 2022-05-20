@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /* Main CSS */
 .main {
   font-family: "Fredoka One";
@@ -410,4 +412,32 @@
 
 #input-Numero-Documemento{
   width: 217px;
+}
+
+/* Necessidades Especiais */
+
+#check-necessidades{
+  font-size: 20px !important;
+}
+
+#text-necessidades{
+  padding-top: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+/* Voo Selecionado */
+
+#div-selecionarVoo{
+  border-radius: 20px;
+  background-color: #FF6464;
+  color: #fff;
+  height: 41px;
+  width: 168px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#link-selecionar{
+  text-decoration: none;
 }
