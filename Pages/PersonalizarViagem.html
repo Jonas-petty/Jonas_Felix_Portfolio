@@ -18,7 +18,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 
-        <title>Voo Selecionado</title>
+        <title>Personalizar Viagem</title>
     </head>
 
     <body class="container body main">
@@ -49,7 +49,7 @@
             <br>
 
             <div class="container" align="center">
-                <h4 id="voos-title">Voo Selecionado</h4>
+                <h4 id="voos-title">Personalize sua viagem</h4>
                 <div id="divider-section"></div>
             </div>
 
@@ -58,56 +58,86 @@
             <section class="container" id="section-buscarvoos">
                 <div align="center">
                     <br>
-                    <h6 id="voos-subtitle">Selecione o voo</h6>
-                </div>
-
-                <!-- Voo 1 -->
-                <div class="container row" id="voo" style="margin:0%">
-
-                    <div class="row" id="voo-content">
-                        <div class="col">
-                            <h6 id="voo-content-title">Passageiro</h6>
-                            <h6 id="voo-content-description"><span id="profile-name"></span></h6>
-                        </div>
-                        <div class="col">
-                            <h6 id="voo-content-title">Origem</h6>
-                            <h6 id="voo-content-description">GRU - 10:10</h6>
-                        </div>
-                        <div class="col">
-                            <h6 id="voo-content-title">Destino</h6>
-                            <h6 id="voo-content-description">REC - 13:20 </h6>
-                        </div>
-                        <div class="col">
-                            <h6 id="voo-content-title">Companhia</h6>
-                            <h6 id="voo-content-description"><u>Gol</u></h6>
-                        </div>
-                        <div class="col">
-                            <h6 id="voo-content-title">Benefícios</h6>
-                            <div>
-                                <i class="bi bi-egg-fried" id="icons-beneficiosgol"></i>
-                                <i class="bi bi-youtube" id="icons-beneficiosgol"></i>
-                                <i class="bi bi-wifi" id="icons-beneficiosgol"></i>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <h6 id="voo-content-title">Valor Final</h6>
-                            <h6 id="voo-content-description">R$ 1.226,42</h6>
-                        </div>
-                        <div class="col">
-                            <a id="link-selecionar" href="/Pages/SelecionarAssento.html"><h6 id="div-selecionarVoo">Selecionar Assento</h6></a>
-                        </div>
-                    </div>
-
+                    <h6 id="voos-subtitle">Recomendamos para sua viagem</h6>
                 </div>
 
                 <br>
 
-                <div class="row" id="section-btns-comprar" align="middle">
-                    <div class="col">
-                        <div id="div-btn-voltar">
-                            <a id="btn-voltar" href="/Pages/Login.html">Voltar</a>
+                <div class="row">
+                    <div class="col-3" id="col-imgs-personalizar">
+                        <h6>Bagagem despachada</h6>
+                        <img id="imgs-personalizar" src="/Images/Luggage.png" alt="">
+                    </div>
+                    <div class="col" id="col-content-personalizar">
+                        <div class="col"><label for="inputPassageiro" class="form-label" id="title-input">Compre sua
+                                bagagem com mais de 48 horas de antecedência do seu
+                                voo para garantir desconto</label>
+                            <select id="inputDocumemento" class="form-select input-op-personalizar">
+                                <option selected>Adiquirir Bagagem</option>
+                                <option>Bagagem de mão</option>
+                                <option>Mochila de costa</option>
+                                <option>Maleiro</option>
+                            </select>
                         </div>
                     </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="row">
+                    <div class="col-3" id="col-imgs-personalizar">
+                        <h6>Dog&Cat Cabine</h6>
+                        <img id="imgs-personalizar" src="/Images/Animal.png" alt="">
+                    </div>
+                    <div class="col" id="col-content-personalizar">
+                        <div class="col"><label for="inputPassageiro" class="form-label" id="title-input">Viaje com o seu companheiro pertinho de você, aproveite agora para 
+                            garantir o espaço do pet na cabine</label>
+                            <select id="inputDocumemento" class="form-select input-op-personalizar">
+                                <option selected>Contratar Dog&Cat Cabine</option>
+                                <option>Cachorro</option>
+                                <option>Gato</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="row">
+                    <div class="col-3" id="col-imgs-personalizar">
+                        <h6>Voe junto</h6>
+                        <img id="imgs-personalizar" src="/Images/Apompanhante.png" alt="">
+                    </div>
+                    <div class="col" id="col-content-personalizar">
+                        <div class="col"><label for="inputPassageiro" class="form-label" id="title-input">Adquira o serviço Voe Junto e acompanhe cada passo da viagem 
+                            de alguém que requer atenção especial à distância </label>
+                            <select id="inputDocumemento" class="form-select input-op-personalizar">
+                                <option selected>Adiquirir Voe Junto</option>
+                                <option>Acompanhante</option>
+                                <option>Cão-guia</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="row" id="section-btns-comprar" align="middle">
+                    <div class="col"></div>
+                    <div class="col-3">
+                        <div id="div-btn-voltar">
+                            <a id="btn-voltar" href="/Pages/DetalhesVoo.html ">Voltar</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div id="div-btn-buscar">
+                            <a id="btn-buscar" href="/Pages/Carrinho.html">Ir para o Carrinho</a>
+                        </div>
+                    </div>
+                    <div class="col"></div>
                 </div>
 
                 <br>
@@ -175,7 +205,6 @@
             console.log(nome)
             var list_nome = nome.split(" ")
             document.getElementById("logo-username").innerHTML = list_nome[0]
-            document.getElementById("profile-name").innerHTML = `${list_nome[0]} ${list_nome[1]}`
         }
 
         document.addEventListener("DOMContentLoaded", get, false)

@@ -18,7 +18,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 
-        <title>Voo Selecionado</title>
+        <title>Carrinho</title>
     </head>
 
     <body class="container body main">
@@ -49,64 +49,130 @@
             <br>
 
             <div class="container" align="center">
-                <h4 id="voos-title">Voo Selecionado</h4>
+                <h4 id="voos-title">Carrinho de Compras</h4>
                 <div id="divider-section"></div>
             </div>
 
             <br>
 
-            <section class="container" id="section-buscarvoos">
+            <section class="container" id="section-carrinho">
                 <div align="center">
                     <br>
-                    <h6 id="voos-subtitle">Selecione o voo</h6>
-                </div>
-
-                <!-- Voo 1 -->
-                <div class="container row" id="voo" style="margin:0%">
-
-                    <div class="row" id="voo-content">
-                        <div class="col">
-                            <h6 id="voo-content-title">Passageiro</h6>
-                            <h6 id="voo-content-description"><span id="profile-name"></span></h6>
-                        </div>
-                        <div class="col">
-                            <h6 id="voo-content-title">Origem</h6>
-                            <h6 id="voo-content-description">GRU - 10:10</h6>
-                        </div>
-                        <div class="col">
-                            <h6 id="voo-content-title">Destino</h6>
-                            <h6 id="voo-content-description">REC - 13:20 </h6>
-                        </div>
-                        <div class="col">
-                            <h6 id="voo-content-title">Companhia</h6>
-                            <h6 id="voo-content-description"><u>Gol</u></h6>
-                        </div>
-                        <div class="col">
-                            <h6 id="voo-content-title">Benefícios</h6>
-                            <div>
-                                <i class="bi bi-egg-fried" id="icons-beneficiosgol"></i>
-                                <i class="bi bi-youtube" id="icons-beneficiosgol"></i>
-                                <i class="bi bi-wifi" id="icons-beneficiosgol"></i>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <h6 id="voo-content-title">Valor Final</h6>
-                            <h6 id="voo-content-description">R$ 1.226,42</h6>
-                        </div>
-                        <div class="col">
-                            <a id="link-selecionar" href="/Pages/SelecionarAssento.html"><h6 id="div-selecionarVoo">Selecionar Assento</h6></a>
-                        </div>
-                    </div>
-
+                    <h6 id="voos-subtitle">Confira o resumo detalhado da sua viagem</h6>
                 </div>
 
                 <br>
+                <br>
 
-                <div class="row" id="section-btns-comprar" align="middle">
+                <div class="row">
+                    <div class="col-3" id="col-imgs-carrinho">
+                        <h6>Voo de ida</h6>
+                        <img id="img-airplane" src="/Images/Airplane.png" alt="">
+                    </div>
                     <div class="col">
-                        <div id="div-btn-voltar">
-                            <a id="btn-voltar" href="/Pages/Login.html">Voltar</a>
+                        <h6 id="col-title-carrinho">Voo de Ida</h6>
+                        <h6 id="col-content-carrinho">G31618</h6>
+                        <h6 id="col-content-carrinho">Operado por GOL</h6>
+                        <h6 id="col-content-carrinho">Duração: 03:20</h6>
+                        <h6 id="col-content-carrinho">Voo direto</h6>
+                        <h6 id="col-title-carrinho">Guarulhos - GRU</h6>
+                        <h6 id="col-content-carrinho">22/05/2022 - 10:10</h6>
+                        <h6 id="col-title-carrinho">Recife - REC</h6>
+                        <h6 id="col-content-carrinho">22/05/2022 - 13:20</h6>
+                    </div> 
+                </div>
+
+                <div class="row">
+                    <div class="col-3" id="col-imgs-carrinho">
+                        <h6>Passageiro</h6>
+                        <img id="img-person" src="/Images/person.png" alt="">
+                    </div>
+                    <div class="col" id="passageiro-info">
+                        <div class="col" id="">
+                            <h6 id="col-title-carrinho">1 Adulto</h6>
+
+                            <div class="row">
+                                <div class="col">
+                                    <h6 id="col-title-carrinho">Valor da passagem</h6>
+                                </div>
+                                <div class="col" id="col-title-carrinho">
+                                    <h6 id="col-precos">R$ 1.226,42</h6>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <h6 id="col-title-carrinho">Valor das taxas</h6>
+                                </div>
+                                <div class="col" id="col-title-carrinho">
+                                    <h6 id="col-precos">R$ 47,79</h6>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="passageiro-total">
+                                <h6>TOTAL R$ 1.274,21</h6>
+                            </div>
                         </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3" id="col-imgs-carrinho">
+                            <h6>Assento</h6>
+                            <img id="img-seat" src="/Images/Seat.png" alt="">
+                        </div>
+                        <div class="col" id="assento-info">
+                            <h6 id="col-title-carrinho">Voo de Ida (GRU - REC)</h6>
+                            <h6 id="col-title-carrinho"><span id="profile-name-assento"></span></h6>
+                            <h6 id="col-title-carrinho">B1 - GOL + Conforto</h6>
+                            <h6 id="col-title-carrinho"><a id="alterar-links" href="">Alterar assento</a></h6>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3" id="col-imgs-carrinho">
+                            <h6>Bagagem</h6>
+                            <img id="imgs-personalizar" src="/Images/Luggage.png" alt="">
+                        </div>
+                        <div class="col" id="bagagem-info">
+                            <h6 id="col-title-carrinho">Voo de Ida (GRU - REC)</h6>
+                            <h6 id="col-title-carrinho"><span id="profile-name_bagagem"></span></h6>
+                            <h6 id="col-title-carrinho">* Nenhuma bagagem adquirida</h6>
+                            <h6 id="col-title-carrinho"><a id="alterar-links" href="">Adquirir bagagem</a></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="container">
+                    <div class="row" id="row-valor-final">
+                        <h6 id="valor-total">Valor total da viagem :</h6>
+                    </div>
+
+                    <br>
+
+                    <div class="row" id="row-valor-final">
+                        <h6 id="valor-total">R$ 1.274,21</h6>
+                    </div>
+                </div>
+
+
+                <br>
+
+                <!-- BOTÔES -->
+
+                <div class="container">
+                    <div class="row" id="btn-pagamento">
+                        <a href="/Pages/Pagamento.html" id="btn-links">Ir para o pagamento</a>
+                    </div>
+
+                    <br>
+
+                    <div class="row" id="btn-voltar">
+                        <a href="/Pages/PersonalizarViagem.html" id="btn-links">Voltar</a>
                     </div>
                 </div>
 
@@ -175,9 +241,10 @@
             console.log(nome)
             var list_nome = nome.split(" ")
             document.getElementById("logo-username").innerHTML = list_nome[0]
-            document.getElementById("profile-name").innerHTML = `${list_nome[0]} ${list_nome[1]}`
+            document.getElementById("profile-name-assento").innerHTML = `${list_nome[0]} ${list_nome[1]}`
+            document.getElementById("profile-name_bagagem").innerHTML = `${list_nome[0]} ${list_nome[1]}`
         }
-
+        
         document.addEventListener("DOMContentLoaded", get, false)
     </script>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -83,11 +83,12 @@
         <div class="row">
             <div class="col-2"><a href="/index.html" id="logo">RiseUp!</a></div>
             <div class="col-8" id="navbar-links">
-                <a class="my-icon" href="/Pages/Acessibilidade.html">Acessibilidade</a>
+                <a class="my-icon" href="/Pages/Acessibilidade.html"
+                    alt="Botão de navegação que o leva para a página Acessibilidade">Acessibilidade</a>
                 <a class="my-icon" href="/Pages/ComprarPassagem.html">Comprar passagem</a>
-                <a class="my-icon" href="#">Check-in</a>
-                <a class="my-icon" href="#">Status de voo</a>
-                <a class="my-icon" href="#">Atendimento</a>
+                <a class="my-icon" href="/Pages/Check-in.html">Check-in</a>
+                <a class="my-icon" href="/Pages/StatusVoo.html ">Status de voo</a>
+                <a class="my-icon" href="/Pages/Atendimento.html">Atendimento</a>
             </div>
             <div class="col-2">
                 <div id="btn-login">
@@ -176,7 +177,7 @@
                 <br>
 
                 <div class="col-md">
-                    <label for="inputdataVoltar" class="form-label" id="title-input">Data da Viagem de volta</label>
+                    <label for="inputdataVoltar" class="form-label" id="title-input"><span id="viagem-volta-title">Data da Viagem de volta</span></label>
                     <input type="date" class="form-control input-passageiro" id="inputdataVoltar">
                 </div>
 
@@ -359,13 +360,32 @@
 
         /*An array containing all the country names in the world:*/
 
-        var countries = ["GRU - Guarulhos - São Paulo", "REC - Recife - Pernambuco", "GIG - Galeao -  Rio de Janeiro"];
+        var countries = ["GRU - Guarulhos - São Paulo", "REC - Recife - Pernambuco"];
 
     
 
         /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
         autocomplete(document.getElementById("myInput"), countries);
         autocomplete(document.getElementById("myData"), countries);
+
+        /*Hide input depending on the radio button*/
+        const radioButton1 = document.getElementById("flexRadioDefault1")
+        const radioButton2 = document.getElementById("flexRadioDefault2")
+
+
+        radioButton1.addEventListener("click", () => {
+            console.log("apertado")
+            document.getElementById("inputdataVoltar").style.display = "none"
+            document.getElementById("viagem-volta-title").innerHTML = ""
+        })
+
+        radioButton2.addEventListener("click", () => {
+            console.log("apertado")
+            document.getElementById("inputdataVoltar").style.display = "block"  
+            document.getElementById("viagem-volta-title").innerHTML = "Data da Viagem de volta"
+        })
+        
+        
     </script>
 
 </body>

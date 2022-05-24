@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 
-    <title>Entrar</title>
+    <title>Check-in</title>
 </head>
 
 <body class="container body main">
@@ -34,6 +34,11 @@
                 <a class="my-icon" href="/Pages/StatusVoo.html ">Status de voo</a>
                 <a class="my-icon" href="/Pages/Atendimento.html">Atendimento</a>
             </div>
+            <div class="col-2">
+                <div id="btn-login">
+                    <a id="btn-link" href="/Pages/Login.html">Login</a>
+                </div>
+            </div>
         </div>
 
     </header>
@@ -44,7 +49,7 @@
         <br>
 
         <div class="container" align="center">
-            <h4 id="text-title">Entrar</h4>
+            <h4 id="text-title">Check-in</h4>
             <div id="divider-section"></div>
         </div>
 
@@ -52,62 +57,71 @@
 
         <form class="container myform">
 
-            <div align="center">
+            <!-- Nacionalidade -->
+            <fieldset class="col-mb-3">
+
                 <br>
-                <h6 id="voos-subtitle">Para continar se identifique</h6>
-            </div>
 
-            <div class="col-md">
-                <label for="input-username" class="form-label" id="title-input">Usuário</label>
-                <input type="text" class="form-control input-passageiro" id="input-username"
-                    placeholder="Nome de usuário">
-            </div>
+                <div align="center">
+                    <h5>Fazer Check-in</h5>
+                </div>
+                <div align="center">
+                    <h6>Preenha os dados abaixo para localizarmos a sua passagem</h6>
+                </div>
 
-            <br>
+                <div class="col"><label for="inputPassageiro" class="form-label" id="title-input">Tipo</label>
+                    <select id="" class="form-select input-passageiro">
+                        <option selected>Escolha uma opção</option>
+                        <option>Check-in Tradicional (Balcão de Atendimento)</option>
+                        <option>Check-in automatizado no aeroporto (Quiosques/Totens)</option>
+                        <option>Check-in online</option>
+                    </select>
+                </div>
 
-            <div class="col-md">
-                <label for="input-username" class="form-label" id="title-input">Senha</label>
-                <input type="text" class="form-control input-passageiro" id="input-username"
-                    placeholder="Digite a sua senha">
-            </div>
+                <br>
 
-            <div>
-                <a href="/Pages/EsqueceuASenha.html" id="login-esqueceu">
-                    <h6 id="login-links">Esqueceu a senha?</h6>
-                </a>
-                <a href="/Pages/Cadastro.html" id="login-esqueceu">
-                    <h6 id="login-links">Cadastrar-se</h6>
-                </a>
-            </div>
-            </div>
+                <div class="col-md">
+                    <label for="input-username" class="form-label" id="title-input">Código da reserva</label>
+                    <input type="text" class="form-control input-passageiro" id="input-username"
+                        placeholder="Digite o código da reserva">
+                </div>
 
-            <br>
+                <br>
 
-            <div class="row" id="section-btns-comprar" align="middle">
-                <div class="col">
-                    <div id="div-btn-voltar">
-                        <a id="btn-voltar" href="/Pages/BuscarVoos.html">Voltar</a>
+                <div class="col-md">
+                    <label for="input-username" class="form-label" id="title-input">De onde parte seu voo?</label>
+                    <input type="text" class="form-control input-passageiro" id="input-username"
+                        placeholder="Qual a sua origem?">
+                </div>
+
+                <br>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Declaro que li e concordo com o <a href="" id="pagamento-link2">regulamento.</a>
+                    </label>
+                </div>
+
+                <br>
+
+                <div class="row" id="section-btns-comprar" align="middle">
+                    <div class="col">
+                        <div id="div-btn-voltar">
+                            <a id="btn-voltar" href="/index.html">Cancelar</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="div-btn-buscar">
+                            <a id="btn-buscar" href="#">Iniciar</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div id="div-btn-buscar">
-                        <a id="btn-buscar" href="/Pages/VooSelecionado.html">Prosseguir</a>
-                    </div>
-                </div>
-            </div>
 
-            <br>
+                <br>
 
-            <div class="row" id="section-btns-comprar" align="middle">
-                <div class="col">
-                    <div id="div-sem-login">
-                        <a id="btn-sem-login" href="/Pages/VooSelecionado.html">Continuar sem login</a>
-                    </div>
-                </div>
-            </div>
 
-            <br>
-            
+            </fieldset>
         </form>
 
         <br>
@@ -130,8 +144,8 @@
             <div class="col">
                 <h5 id="nav-footer2">Menu</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="/index.html" id="footer-links"
-                            class="nav-link p-0">Home</a></li>
+                    <li class="nav-item mb-2"><a href="/index.html" id="footer-links" class="nav-link p-0">Home</a>
+                    </li>
                     <li class="nav-item mb-2"><a href="/Pages/Acessibilidade.html" id="footer-links"
                             class="nav-link p-0">Acessibilidade</a></li>
                     <li class="nav-item mb-2"><a href="/Pages/ComprarPassagem.html" id="footer-links"
@@ -163,3 +177,7 @@
             </div>
         </footer>
     </div>
+
+</body>
+
+</html>

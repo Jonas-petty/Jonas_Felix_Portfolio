@@ -1,5 +1,3 @@
-@charset "utf-8";
-
 /* Main CSS */
 .main {
   font-family: "Fredoka One";
@@ -7,7 +5,6 @@
 
 .body {
   background-color: gray;
-  
 }
 
 /* Landingpage */
@@ -341,86 +338,86 @@
   margin-bottom: 20px;
 }
 
-#voo-content-title{
+#voo-content-title {
   color: #003373;
   font-size: 15px;
 }
 
-#voo-content-description{
-  color: #353B3D;
+#voo-content-description {
+  color: #353b3d;
   font-size: 20px;
 }
 
-#icons-beneficiosgol{
+#icons-beneficiosgol {
   color: #003373;
   font-size: 24px;
-  margin: 5px
+  margin: 5px;
 }
 
 /* Login */
 
-#login-esqueceu{
+#login-esqueceu {
   text-decoration: none;
 }
 
-#login-links{
+#login-links {
   margin-top: 2%;
   color: #3998b8;
   font-size: 16px;
 }
 
-#div-sem-login{
+#div-sem-login {
   background-color: #ffffff;
   height: 41px;
   width: 168px;
   border-radius: 20px;
   text-align: center;
-  padding-top: 8px; 
+  padding-top: 8px;
 }
 
-#btn-sem-login{
+#btn-sem-login {
   text-decoration: none;
   color: #003373;
 }
 
 /* Cadastro */
 
-#input-CEP{
+#input-CEP {
   width: 140px;
 }
 
-#search-correios{
+#search-correios {
   text-align: left;
   margin-top: 48px;
   margin-left: 20px;
 }
 
-#search-correios-link{
+#search-correios-link {
   color: #fff;
   font-size: 12px;
 }
 
-#input-nacionalidade{
+#input-nacionalidade {
   text-align: left;
   margin-top: 48px;
   margin-left: 20px;
 }
 
-#inputDocumemento{
+#inputDocumemento {
   width: 185px;
 }
 
-#input-Numero-Documemento{
+#input-Numero-Documemento {
   width: 217px;
 }
 
 /* Necessidades Especiais */
 
-#check-necessidades{
+#check-necessidades {
   font-size: 20px !important;
 }
 
-#text-necessidades{
+#text-necessidades {
   padding-top: 3px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -428,16 +425,327 @@
 
 /* Voo Selecionado */
 
-#div-selecionarVoo{
+#div-selecionarVoo {
   border-radius: 20px;
-  background-color: #FF6464;
+  background-color: #ff6464;
   color: #fff;
   height: 41px;
-  width: 168px;
+  width: 165px;
   text-align: center;
   padding-top: 10px;
 }
 
-#link-selecionar{
+#link-selecionar {
   text-decoration: none;
+}
+
+/* Selecionar Assentos */
+
+#assentos-subtitle {
+  font-size: 20px;
+  color: #fff;
+}
+
+.subtitle-icon-circle-1 {
+  font-size: 20px;
+  color: #59b839;
+  padding-right: 10px;
+}
+
+.subtitle-icon-circle-2 {
+  font-size: 20px;
+  color: #ff6464;
+  padding-right: 10px;
+}
+
+.subtitle-icon-circle-3 {
+  font-size: 20px;
+  color: gray;
+  padding-right: 10px;
+}
+
+.subtitle-icon-circle-4 {
+  font-size: 20px;
+  color: black;
+  padding-right: 10px;
+}
+
+/* Avião */
+
+.section-aviao {
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.cabine {
+  background-color: #fff;
+  height: 1440px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  text-align: center;
+}
+
+.assentos-cauda {
+  background-color: #fff;
+  height: 1440px;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  text-align: center;
+}
+
+#assentos-indices {
+  margin-top: 100%;
+  font-size: 24px;
+  border-bottom: 1px solid red;
+}
+
+#fileira-indices {
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#all-assentos {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.assentos-disp {
+  font-size: 60px;
+  color: #59b839;
+}
+
+.assentos-Gol {
+  font-size: 60px;
+  color: #ff6464;
+}
+
+.assentos-ocupado {
+  font-size: 60px;
+  color: gray;
+}
+
+.assentos-bloqueado {
+  font-size: 60px;
+  color: black;
+}
+
+.last-fileira {
+  border-bottom: 1px solid red;
+}
+
+/* Confirmação de Assento */
+
+#Assento-selecionado {
+  color: #fff;
+  background-color: #ff6464;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+/* Personalizar Viagem */
+
+#imgs-personalizar {
+  height: 160px;
+  width: 160px;
+}
+
+#col-imgs-personalizar {
+  color: #fff;
+  text-align: center;
+}
+
+#col-content-personalizar {
+  color: #fff;
+  margin-top: 25px;
+}
+
+.input-op-personalizar {
+  margin-top: 15px;
+  height: 46px;
+  width: 300px !important;
+}
+
+/* Carrinho */
+
+#img-airplane {
+  width: 122.67px;
+  height: 131.02px;
+}
+
+#img-person {
+  width: 97.92px;
+  height: 128px;
+}
+
+#img-seat {
+  width: 106.24px;
+  height: 128px;
+}
+
+#col-imgs-carrinho {
+  color: #fff;
+  text-align: center;
+  margin-top: 60px;
+}
+
+#col-title-carrinho {
+  color: #fff;
+}
+
+#col-content-carrinho {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+#passageiro-info {
+  margin: auto;
+  padding-top: 50px;
+}
+
+.passageiro-total {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  height: 40px;
+  border-radius: 5px;
+  margin-right: 50px;
+}
+
+#col-precos {
+  margin-right: 50px;
+  text-align: right;
+}
+
+#assento-info {
+  margin: auto;
+  padding-top: 10px;
+}
+
+#bagagem-info {
+  margin-top: 5.5%;
+}
+
+#alterar-links {
+  text-decoration: none;
+  color: #3998b8;
+}
+
+#row-valor-final {
+  margin: auto;
+  text-align: center;
+}
+
+#valor-total {
+  font-size: 32px;
+  color: #fff;
+}
+
+#btn-pagamento {
+  background-color: #ff6464;
+  color: #fff;
+  margin: auto;
+  padding: 9px;
+  height: 40px;
+  text-align: center;
+  width: 300px;
+  border-radius: 36px;
+}
+
+#btn-voltar {
+  background-color: #3998b8;
+  color: #fff;
+  margin: auto;
+  padding: 9px;
+  height: 40px;
+  text-align: center;
+  width: 110px;
+  border-radius: 36px;
+}
+
+#btn-links {
+  text-decoration: none;
+  color: #fff;
+}
+
+#section-carrinho {
+  background-color: #003373;
+  border-radius: 8px;
+  width: 960px;
+}
+
+/* Pagamento */
+
+#pagamento-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+#pagamento-link2 {
+  text-decoration: none;
+  color: #3998b8;
+}
+
+.pagamento-icon {
+  font-size: 24px !important;
+}
+
+#pagamento-text {
+  padding-left: 10px;
+  font-size: 18px;
+  color: #3998b8;
+}
+
+/* Confirmação do pagamento */
+
+#btn-perfil {
+  background-color: #3998b8;
+  height: 41px;
+  width: 168px;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 8px;
+}
+
+#btn-checkin {
+  background-color: #ff6464;
+  height: 41px;
+  width: 168px;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 8px;
+}
+
+#btn-statusvoo {
+  background-color: #3998b8;
+  height: 41px;
+  width: 168px;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 8px;
+}
+
+#btn-links {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Atendimento */
+
+#contatos-label{
+  margin: auto;
+  padding: 10px;
+  background-color: #fff;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  margin-right: 50px;
+}
+
+#contatos-text{
+  color: #353b3d;
 }

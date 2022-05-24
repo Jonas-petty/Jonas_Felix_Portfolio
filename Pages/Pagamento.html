@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 
-    <title>Cadastra-se</title>
+    <title>Pagamento</title>
 </head>
 
 <body class="container body main">
@@ -49,7 +49,7 @@
         <br>
 
         <div class="container" align="center">
-            <h4 id="text-title">Cadastre-se</h4>
+            <h4 id="text-title">Pagamento</h4>
             <div id="divider-section"></div>
         </div>
 
@@ -62,32 +62,20 @@
 
                 <br>
 
+                <div align="center">
+                    <h5>Dados do responsável pelo pagamento</h5>
+                </div>
+                <div align="center">
+                    <h6>* Todos os campos são obrigatórios *</h6>
+                </div>
+
+                <br>
+
                 <!-- Nome completo -->
                 <div class="col-md">
                     <label for="input-username" class="form-label" id="title-input">Nome completo</label>
-                    <input type="text" class="form-control input-passageiro" id="input-name"
+                    <input type="text" class="form-control input-passageiro" id="input-username"
                         placeholder="Digite seu nome">
-                </div>
-
-                <br>
-
-                <div class="col-md">
-                    <label for="input-username" class="form-label" id="title-input">Endereço</label>
-                    <input type="text" class="form-control input-passageiro" id="input-addres"
-                        placeholder="Digite seu endereço">
-                </div>
-
-                <br>
-
-                <div class="row">
-                    <div class="col-md-3"><label for="input-username" class="form-label" id="title-input">CEP</label>
-                        <input type="text" class="form-control input-passageiro" id="input-CEP"
-                            placeholder="Ex: 00000-000">
-                    </div>
-                    <div class="col-md" id="search-correios"><a
-                            href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank"
-                            id="search-correios-link">Buscar CEP</a></div>
-
                 </div>
 
                 <br>
@@ -137,45 +125,134 @@
 
                 <br>
 
-                <div class="col-md-4"><label for="inputPassageiro" class="form-label" id="title-input">Gênero</label>
-                    <select id="inputDocumemento" class="form-select input-passageiro">
+                <div class="col"><label for="inputPassageiro" class="form-label" id="title-input">País</label>
+                    <select id="" class="form-select input-passageiro">
                         <option selected>Selecione</option>
-                        <option>Masculino</option>
-                        <option>Feminino</option>
-                        <option>Não binário</option>
+                        <option>Argélia</option>
+                        <option>Brasil</option>
+                        <option>Chile</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div class="col"><label for="inputPassageiro" class="form-label" id="title-input">Estado</label>
+                    <select id="" class="form-select input-passageiro">
+                        <option selected>Selecione</option>
+                        <option>Argélia</option>
+                        <option>Brasil</option>
+                        <option>Chile</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div class="col"><label for="inputPassageiro" class="form-label" id="title-input">Cidade</label>
+                    <select id="" class="form-select input-passageiro">
+                        <option selected>Selecione</option>
+                        <option>Argélia</option>
+                        <option>Brasil</option>
+                        <option>Chile</option>
                     </select>
                 </div>
 
                 <br>
 
                 <div class="col-md">
-                    <label for="input-username" class="form-label" id="title-input">Email</label>
-                    <input type="email" class="form-control input-passageiro" id="input-email"
-                        placeholder="Digite um email válido">
+                    <label for="input-username" class="form-label" id="title-input">Endereço</label>
+                    <input type="text" class="form-control input-passageiro" id="input-username"
+                        placeholder="Digite seu endereço">
                 </div>
 
                 <br>
 
                 <div class="col-md">
-                    <label for="input-username" class="form-label" id="title-input">Confirme seu email</label>
-                    <input type="email" class="form-control input-passageiro" id="input-email2"
-                        placeholder="Digite um email válido">
+                    <label for="input-username" class="form-label" id="title-input">Número</label>
+                    <input type="text" class="form-control input-passageiro" id="input-username"
+                        placeholder="Digite o número do endereço">
                 </div>
 
                 <br>
 
                 <div class="col-md">
-                    <label for="input-username" class="form-label" id="title-input">Senha</label>
-                    <input type="text" class="form-control input-passageiro" id="input-senha"
-                        placeholder="Digite uma senha">
+                    <label for="input-username" class="form-label" id="title-input">Complemento</label>
+                    <input type="text" class="form-control input-passageiro" id="input-username"
+                        placeholder="Digite um complemento">
                 </div>
 
                 <br>
 
                 <div class="col-md">
-                    <label for="input-username" class="form-label" id="title-input">Confirme sua senha</label>
-                    <input type="text" class="form-control input-passageiro" id="input-senha2"
-                        placeholder="Digite a senha novamente">
+                    <label for="input-username" class="form-label" id="title-input">Telefone celular</label>
+                    <input type="text" class="form-control input-passageiro" id="input-username"
+                        placeholder="+00 (00) 00000-0000">
+                </div>
+
+                <br>
+                <br>
+                <div align="center">
+                    <h3>Formas de pagamento</h3>
+                </div>
+
+                <div class="col"><label for="inputPassageiro" class="form-label" id="title-input">Opções</label>
+                    <select id="" class="form-select input-passageiro">
+                        <option selected>Selecione</option>
+                        <option>Cartão de crédito</option>
+                        <option>Cartão de débito</option>
+                        <option>Paypal</option>
+                        <option>Pix</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div class="col-md">
+                    <label for="input-username" class="form-label" id="title-input">Número do cartão</label>
+                    <input type="number" class="form-control input-passageiro" id="input-username"
+                        placeholder="Digite o número do cartão">
+                </div>
+
+                <br>
+
+                <div class="col-md">
+                    <label for="inputdataVoltar" class="form-label" id="title-input">Validade</label>
+                    <input type="date" class="form-control input-passageiro" id="inputdataVoltar">
+                </div>
+
+                <br>
+
+                <div class="col-md">
+                    <label for="input-username" class="form-label" id="title-input">Nome do titular</label>
+                    <input type="email" class="form-control input-passageiro" id="input-username"
+                        placeholder="Digite o nome aqui">
+                </div>
+
+                <br>
+
+                <div class="col-md">
+                    <label for="input-username" class="form-label" id="title-input">Código de segurança</label>
+                    <input type="number" class="form-control input-passageiro" id="input-username"
+                        placeholder="Digite aqui o código">
+                </div>
+
+                <br>
+
+                <div class="col"><label for="inputPassageiro" class="form-label" id="title-input">Número de
+                        parcelas</label>
+                    <select id="" class="form-select input-passageiro">
+                        <option selected>Selecione</option>
+                        <option>x 1</option>
+                        <option>x 2</option>
+                        <option>x 5</option>
+                        <option>x 12</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div class="col-md">
+                    <a id="pagamento-link" href=""><i class="bi bi-plus-circle-fill pagamento-icon "></i><span
+                            id="pagamento-text">Pagar com dois cartões</span></a>
                 </div>
 
                 <br>
@@ -183,27 +260,8 @@
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                        Li e estou de acordo com a <a href="">Política de Privacidade.</a>
-                    </label>
-                </div>
-
-                <br>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Desejo me cadastrar gratuitamente no programa Smiles e estou de acordo com os <a href="">Termos
-                            e Condiçõesde uso.</a>
-                    </label>
-                </div>
-
-                <br>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Você precisa de atendimento especial? Ex: Idoso, gestante,
-                        atleta, pessoa portadora de deficiência, etc
+                        Li e concordo com o: <a href="" id="pagamento-link2">contrato de transporte aéreo </a>, <a href="" id="pagamento-link2">política de privacidade</a>, termos de tarifas
+                        e <a href="" id="pagamento-link2">restrições de bagagem.</a>
                     </label>
                 </div>
 
@@ -212,12 +270,12 @@
                 <div class="row" id="section-btns-comprar" align="middle">
                     <div class="col">
                         <div id="div-btn-voltar">
-                            <a id="btn-voltar" href="/Pages/Login.html">Cancelar</a>
+                            <a id="btn-voltar" href="/Pages/Carrinho.html">Cancelar</a>
                         </div>
                     </div>
                     <div class="col">
                         <div id="div-btn-buscar">
-                            <a id="btn-buscar" href="/Pages/NecessidadesEspeciais.html" onclick="store()">Continuar</a>
+                            <a id="btn-buscar" href="/Pages/ConfirmaçãoPagamento.html">Confirmar </a>
                         </div>
                     </div>
                 </div>
@@ -283,12 +341,5 @@
     </div>
 
 </body>
-<script>
-    function store() {
-        var nome = document.getElementById('input-name').value
-        sessionStorage.setItem("nome", nome)
-        console.logf(`Nome: ${nome} cadastrado!`)
-    }
-</script>
 
 </html>
