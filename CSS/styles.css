@@ -4,7 +4,47 @@
 }
 
 .body {
-  background-color: gray;
+  background-color: #353b3d;
+}
+
+/* Font patterns */
+
+.font-BIGtitle {
+  color: #fff;
+  font-size: 2.441rem;
+  text-decoration: none;
+}
+
+.font-title {
+  color: #fff;
+  font-size: 1.562rem;
+}
+
+.font-subtitle {
+  color: #fff;
+  font-size: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.font-subtitle-2 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-family: "Fredoka One";
+}
+
+.font-text {
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+/* Input */
+
+.all-input{
+  height: 46px;
+  width: 534px;
 }
 
 /* Landingpage */
@@ -118,7 +158,9 @@
 #section-duvidas {
   background-image: linear-gradient(to right, #003373, #3998b8);
   border-radius: 16px;
-  height: 280px;
+  height: max-content;
+  width: 100%;
+  padding: 20px;
 }
 
 #section-duvidas-pergunta {
@@ -140,7 +182,7 @@
 }
 
 #nav-footer2 {
-  color: #003373;
+  color: #fff;
 }
 
 /* Comprar Passagem */
@@ -295,6 +337,7 @@
 
 #footer-links {
   font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   font-size: 16px;
   color: #fff;
 }
@@ -409,6 +452,11 @@
 
 #input-Numero-Documemento {
   width: 217px;
+}
+
+#text-necessidades{
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Necessidades Especiais */
