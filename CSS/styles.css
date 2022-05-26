@@ -1,4 +1,8 @@
 /* Main CSS */
+body {
+  transition: all 1.5s;
+}
+
 .main {
   font-family: "Fredoka One";
 }
@@ -796,4 +800,33 @@
 
 #contatos-text{
   color: #353b3d;
+}
+
+.dark_mode {
+  background-color: rgb(28, 28, 28);
+  
+}
+
+.dark_mode div p  {
+  color: yellowgreen !important; 
+}
+
+.dark_mode div h6  {
+  color: yellowgreen !important; 
+}
+
+.dark_mode div h5  {
+  color: yellowgreen !important; 
+}
+
+.dark_mode div h4  {
+  color: yellowgreen !important; 
+}
+
+.dark_mode div h3  {
+  color: yellowgreen !important; 
+}
+
+.dark_mode div a  {
+  color: yellowgreen !important; 
 }
