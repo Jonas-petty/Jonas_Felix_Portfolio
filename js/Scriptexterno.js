@@ -3,6 +3,8 @@ window.onload = function() {
 	increaseDecreaseFont();
 }
 
+var data = new Date()
+
 function increaseDecreaseFont() {
 	var elementBody = document.querySelector('html');
 	var elementBtnIncreaseFont = document.getElementById('increase-font');
@@ -73,4 +75,19 @@ function verificaEstado() {
 		claro()
 	}
 }
-document.addEventListener("DOMContentLoaded", verificaEstado, false)
+
+// Data Atual no sistema
+
+function dataAtual() {
+	document.getElementById("dataAtual").innerHTML = data.toLocaleDateString()
+}
+
+// Inicia o sistema
+
+function iniciadora() {
+	verificaEstado()
+	dataAtual()
+	dataMinima()
+}
+
+document.addEventListener("DOMContentLoaded", iniciadora, false)

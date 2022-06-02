@@ -1,47 +1,91 @@
 /* Main CSS */
+
+.html-background{
+  /* background-image:url(/Images/pexels-chama-691901.jpg); */
+  background-image:url(/Images/12.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 body {
   transition: all 1.5s;
 }
 
 .main {
   font-family: "Fredoka One";
+  border-left: 1px outset;
+  border-right: 1px inset;
+  border-bottom: 1px inset;
 }
 
 .body {
-  background-color: #353b3d;
+  background-color:rgba(255, 255, 255, 0.6);
 }
 
 /* Font patterns */
 
 .font-BIGtitle {
-  color: #fff;
+  color: rgb(58, 57, 57);;
   font-size: 2.441rem;
   text-decoration: none;
 }
 
-.font-title {
+.font-title-branco {
   color: #fff;
   font-size: 1.562rem;
 }
 
-.font-subtitle {
-  color: #fff;
-  font-size: 1.25rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+.font-title-preto {
+  color: rgb(58, 57, 57);
+  font-size: 1.562rem;
 }
 
-.font-subtitle-2 {
+.font-subtitle-branco {
+  color: #fff;
+  font-size: 1.25rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.font-subtitle-preto {
+  color: rgb(58, 57, 57);
+  font-size: 1.25rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.font-subtitle-azul {
+  color: #003373;
+  font-size: 1.25rem;
+}
+
+.font-subtitle-azul-claro {
+  color: #3998b8;
+  font-size: 1.25rem;
+}
+
+.font-subtitle-2-branco {
   color: #fff;
   font-size: 1.25rem;
   font-family: "Fredoka One";
 }
 
-.font-text {
+.font-subtitle-2-preto {
+  color: rgb(58, 57, 57);
+  font-size: 1.25rem;
+  font-family: "Fredoka One";
+}
+
+.font-text-branco {
   color: #fff;
   font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.font-text-preto {
+  color: rgb(58, 57, 57);
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 /* Input */
@@ -53,33 +97,37 @@ body {
 
 /* Landingpage */
 #logo {
-  color: #fff;
+  margin-top: 10px;
+  color: rgb(58, 57, 57);
   font-size: 39px;
   text-decoration: none;
 }
 
-.my-icon {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+#navbar-div {
+  margin-top: 10px;
+  border-radius: 8px;
+  padding-top: 18px;
+  background-color: #e9e9e9;
+}
+
+.navbar-links {
+  /* font-family: "Montserrat", sans-serif;
+  font-weight: bold; */
+  padding-left: 10px;
   font-size: 16px;
   color: #003373;
   text-decoration: none;
-  margin-left: 30px;
-}
-
-#navbar-links {
-  background-color: #fff;
-  border-radius: 8px;
-  padding-top: 16px;
 }
 
 #btn-login {
-  color: #fff;
-  background-image: linear-gradient(to right, #003373, #3998b8);
-  border-radius: 8px;
-  height: 100%;
-  text-align: center;
+  margin-top: 10px;
   padding-top: 16px;
+  text-align: center;
+  background-image: linear-gradient(to right, #003373, #3998b8);
+  border: 2px outset;
+  border-radius: 8px;
+  height: 85%;
+  width: 100%;
 }
 
 #btn-link {
@@ -87,12 +135,16 @@ body {
   text-decoration: none;
 }
 
-#section-destaque {
+#main-content {
   margin-top: 10%;
 }
 
+#web_acessivel{
+  color: #003373;
+}
+
 #section-textos {
-  color: #fff;
+  color: rgb(58, 57, 57);
   justify-content: center;
   margin-top: 2%;
 }
@@ -110,16 +162,18 @@ body {
   padding-bottom: 15px;
 }
 
-#div-saibamais {
-  background-color: #fff;
-  height: 53px;
-  border-radius: 8px;
+#btn-cadastrese {
+  padding-top: 13px;
   text-align: center;
-  padding-top: 14px;
+  background-color: #003373;
+  height: 50px;
+  width: 100%;
+  border-radius: 8px;
+  border: 2px outset;
 }
 
-#btn-saibamais {
-  color: #003373;
+#cadastrese-link {
+  color: #fff;
   text-decoration: none;
 }
 
@@ -142,25 +196,33 @@ body {
   box-shadow: 2px 2px 2px #003373;
 }
 
-#div-title {
+#section-quemsomos{
+  margin-top: 5%;
+}
+
+/* #div-title {
   height: 150px;
   align-items: center;
   text-align: middle;
   margin: 0px;
   padding: 0px;
-}
+} */
 
-#bot-img {
+/* #bot-img {
   height: 128px;
-}
+} */
 
 #col-text {
-  color: #fff;
+  color: rgb(58, 57, 57);
   font-size: 31px;
 }
 
+#div-duvidas{
+  margin-top: 10%;
+}
+
 #section-duvidas {
-  background-image: linear-gradient(to right, #003373, #3998b8);
+  background-color: #003373;
   border-radius: 16px;
   height: max-content;
   width: 100%;
@@ -181,12 +243,11 @@ body {
   margin: 10px;
 }
 
-#nav-footer {
-  color: #fff;
-}
+/* Footer */
 
-#nav-footer2 {
-  color: #fff;
+#footer-links {
+  font-size: 16px;
+  color: #003373;
 }
 
 /* Comprar Passagem */
@@ -206,6 +267,11 @@ body {
 
 #title-input {
   font-size: 20px;
+}
+
+.btn-radio{
+  margin-top: 3px;
+  margin-left: 3px;
 }
 
 .input-origem-destino {
@@ -264,6 +330,18 @@ body {
   text-decoration: none;
 }
 
+#btn_send_form {
+  background-color: #ff6464;
+  height: 41px;
+  width: 168px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 0 8px;
+  color: #fff;
+  text-decoration: none;
+}
+
 /* Acessibilidade*/
 
 #text-title-acess {
@@ -272,7 +350,8 @@ body {
 }
 
 #text-subtitle-acess {
-  color: #003373;
+  font-size: 24px;  
+  color: #fff;
 }
 
 #main-text-acess {
@@ -286,11 +365,21 @@ body {
   background-color: #3998b8;
   border-radius: 10px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #text-question-acess {
   color: #003373;
   font-size: 24px;
+}
+
+.div-necessidades{
+  margin-top: 30px;
+}
+
+.title-necessidade{
+  padding: 0px;
+  color: #fff;
 }
 
 #div-question-border {
@@ -313,11 +402,62 @@ body {
   color: #fff;
 }
 
+.baixavisao{
+  margin-top: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.daltonismo{
+  margin-top: 15px;
+  height: 50px;
+  width: 50px;
+}
+
+.fotossensivel{
+  margin-top: 20px;
+  height: 30px;
+  width: 50px;
+}
+
+.cegueira{
+  margin-top: 15px;
+  height: 40px;
+  width: 50px;
+}
+
+.necessidade-desc{
+  margin-top: 20px;
+}
+
+.aumentar-fonte{
+  background-color: #003373;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 6px;
+}
+
+.diminuir-fonte{
+  background-color: #ff6464;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 6px;
+}
+
+.contraste{
+  background-image: linear-gradient(to right, #003373, #3998b8);
+  color: #fff;
+  font-size: 1.2rem;
+  margin-left: 0px;
+  border-radius: 6px;
+}
+
 #div-icon {
-  padding-left: 10px;
   width: 70px;
   height: 70px;
   background-color: #3998b8;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
 #title-text-acess {
@@ -337,15 +477,6 @@ body {
   background-color: #3998b8;
 }
 
-/* Footer */
-
-#footer-links {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  color: #fff;
-}
-
 /* Buscar Voos */
 
 #section-buscarvoos {
@@ -353,22 +484,21 @@ body {
   border-radius: 8px;
 }
 
-#voos-title {
+/* #voos-title {
   text-align: center;
   color: #fff;
   font-size: 31px;
 }
-
-#voos-subtitle {
+ */
+/* #voos-subtitle {
   font-size: 20px;
   color: #fff;
 }
-
+ */
 #voos-description {
-  font-family: "Montserrat", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #fff;
   font-size: 16px;
-  font-weight: bold;
   padding-right: 24px;
 }
 
@@ -408,7 +538,8 @@ body {
 }
 
 #login-links {
-  margin-top: 2%;
+  margin-left: 5px;
+  margin-top: 15px;
   color: #3998b8;
   font-size: 16px;
 }
@@ -416,7 +547,7 @@ body {
 #div-sem-login {
   background-color: #ffffff;
   height: 41px;
-  width: 168px;
+  width: 180px;
   border-radius: 20px;
   text-align: center;
   padding-top: 8px;
@@ -458,23 +589,6 @@ body {
   width: 217px;
 }
 
-#text-necessidades{
-  text-decoration: none;
-  color: #fff;
-}
-
-/* Necessidades Especiais */
-
-#check-necessidades {
-  font-size: 20px !important;
-}
-
-#text-necessidades {
-  padding-top: 3px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-}
-
 /* Voo Selecionado */
 
 #div-selecionarVoo {
@@ -482,7 +596,7 @@ body {
   background-color: #ff6464;
   color: #fff;
   height: 41px;
-  width: 165px;
+  width: 180px;
   text-align: center;
   padding-top: 10px;
 }
@@ -499,28 +613,34 @@ body {
 }
 
 .subtitle-icon-circle-1 {
-  font-size: 20px;
-  color: #59b839;
-  padding-right: 10px;
-}
-
-.subtitle-icon-circle-2 {
-  font-size: 20px;
-  color: #ff6464;
-  padding-right: 10px;
-}
-
-.subtitle-icon-circle-3 {
-  font-size: 20px;
+  font-size: 25px;
   color: gray;
   padding-right: 10px;
 }
 
+.subtitle-icon-circle-2 {
+  font-size: 25px;
+  color: gray;
+  padding-right: 10px;
+}
+
+.subtitle-icon-circle-3 {
+  font-size: 25px;
+  color: #59b839;
+  padding-right: 10px;
+}
+
 .subtitle-icon-circle-4 {
+  font-size: 25px;
+  color: #ff6464;
+  padding-right: 10px;
+}
+
+/* .subtitle-icon-circle-4 {
   font-size: 20px;
   color: black;
   padding-right: 10px;
-}
+} */
 
 /* Avião */
 
@@ -570,18 +690,18 @@ body {
 
 .assentos-Gol {
   font-size: 60px;
-  color: #ff6464;
+  color: #59b839 !important;
 }
 
 .assentos-ocupado {
   font-size: 60px;
-  color: gray;
+  color: #ff6464;
 }
 
-.assentos-bloqueado {
+/* .assentos-bloqueado {
   font-size: 60px;
   color: black;
-}
+} */
 
 .last-fileira {
   border-bottom: 1px solid red;
@@ -613,6 +733,7 @@ body {
 #col-content-personalizar {
   color: #fff;
   margin-top: 25px;
+  margin-left: 25px;
 }
 
 .input-op-personalizar {
@@ -663,7 +784,7 @@ body {
   padding: 10px;
   text-align: center;
   background-color: #fff;
-  height: 40px;
+  height: 45px;
   border-radius: 5px;
   margin-right: 50px;
 }
@@ -683,6 +804,7 @@ body {
 }
 
 #alterar-links {
+  font-size: 1rem;
   text-decoration: none;
   color: #3998b8;
 }
@@ -829,4 +951,8 @@ body {
 
 .dark_mode div a  {
   color: yellowgreen !important; 
+}
+
+.dark_mode #btn_send_form {
+  color: yellowgreen;
 }

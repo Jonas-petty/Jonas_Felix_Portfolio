@@ -94,68 +94,64 @@
         <br>
 
         <main class="container">
-            <br>
-
-            <div class="container" align="center">
-                <h4 class="font-title-preto">Detalhes do Voo</h4>
-                <div id="divider-section"></div>
-            </div>
 
             <br>
 
-            <section class="container" id="section-buscarvoos">
+            <form class="container myform">
+
                 <div align="center">
                     <br>
-                    <h6 class="font-text-branco">Selecione uma passagem</h6>
+                    <h6 class="font-title-branco">Confirmação de pagamento </h6>
+                    <br>
                 </div>
 
-                <!-- Voo 1 -->
-                <div class="container row" id="voo" style="margin:0%">
+                <hr>
 
-                    <div class="row" id="voo-content">
-                        <div class="col">
-                            <h6 id="voo-content-title">Passageiro</h6>
-                            <h6 id="voo-content-description"><span id="profile-name"></span></h6>
-                        </div>
-                        <div class="col">
-                            <h6 id="voo-content-title">Origem</h6>
-                            <h6 id="voo-content-description">GRU - 10:10</h6>
-                        </div>
-                        <div class="col">
-                            <h6 id="voo-content-title">Destino</h6>
-                            <h6 id="voo-content-description">REC - 13:20 </h6>
-                        </div>
-                        <div class="col">
-                            <h6 id="voo-content-title">Assento</h6>
-                            <h6 id="voo-content-description"><u id="Assento-selecionado">B1</u> </h6>
-                        </div>
-                        <div class="col">
-                            <a class="font-text-branco" id="link-selecionar" href="/Pages/PersonalizarViagem.html"><h6 id="div-selecionarVoo">Personalizar Viagem</h6></a>
-                        </div>
-                    </div>
-
+                <div align="center">
+                    <br>
+                    <h6 class="font-subtitle-branco">Pagamento aprovado com sucesso! </h6>
+                    <br>
                 </div>
 
-                <br>
+                <hr>
 
-                <div class="row" id="section-btns-comprar" align="middle">
+                <div align="center">
+                    <br>
+                    <h6 class="font-text-branco">Para onde deseja ir?</h6>
+                    <br>
+                </div>
+
+                <div class="col" id="section-btns-comprar" align="middle">
                     <div class="col">
-                        <div id="div-btn-voltar">
-                            <a class="font-text-branco" id="btn-voltar" href="/Pages/ConfirmarAssento.html">Voltar</a>
+                        <div id="btn-perfil">
+                            <a class="font-text-branco" id="btn-links" href="#">Perfil</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col">
+                        <div id="btn-checkin">
+                            <a class="font-text-branco" id="btn-links" href="/Pages/Check-in.html">Check-in</a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col">
+                        <div id="btn-statusvoo">
+                            <a class="font-text-branco" id="btn-links" href="/Pages/Check-in.html">Status do voo </a>
                         </div>
                     </div>
                 </div>
 
                 <br>
 
-            </section>
+                <hr>
+
+                <br>
+
+            </form>
 
             <br>
 
         </main>
-
-        <br><br><br><br><br><br><br>
-        <br>
 
         <div class="container">
             <footer class="row row-cols-5 py-5 my-5 border-top">
@@ -208,16 +204,15 @@
         </div>
         <script type="text/javascript" src="/js/cookie.js"></script>
         <script type="text/javascript" src="/js/Scriptexterno.js"></script>
-    </body> 
+    </body>
     <script>
         function get() {
             var nome = sessionStorage.getItem("nome")
             console.log(nome)
             var list_nome = nome.split(" ")
             document.getElementById("logo-username").innerHTML = list_nome[0]
-            document.getElementById("profile-name").innerHTML = `${list_nome[0]} ${list_nome[1]}`
         }
-
+        
         document.addEventListener("DOMContentLoaded", get, false)
     </script>
 </html>
