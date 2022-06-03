@@ -127,7 +127,7 @@
                         </div>
                         <div class="col">
                             <h6 id="voo-content-title">Assento</h6>
-                            <h6 id="voo-content-description"><u id="Assento-selecionado">B1</u> </h6>
+                            <h6 id="voo-content-description"><u id="Assento-selecionado"></u> </h6>
                         </div>
                         <div class="col">
                             <a class="font-text-branco" id="link-selecionar" href="/Pages/PersonalizarViagem.html"><h6 id="div-selecionarVoo">Personalizar Viagem</h6></a>
@@ -217,6 +217,8 @@
             document.getElementById("logo-username").innerHTML = list_nome[0]
             document.getElementById("profile-name").innerHTML = `${list_nome[0]} ${list_nome[1]}`
         }
+
+        document.getElementById("Assento-selecionado").innerHTML = sessionStorage.getItem("assento")
 
         document.addEventListener("DOMContentLoaded", get, false)
     </script>

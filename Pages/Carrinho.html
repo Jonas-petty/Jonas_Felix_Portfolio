@@ -173,7 +173,7 @@
                         <div class="col" id="assento-info">
                             <h6 class="font-text-branco">Voo de Ida (GRU - REC)</h6>
                             <h6 class="font-text-branco"><span id="profile-name-assento"></span></h6>
-                            <h6 class="font-text-branco">B1 - GOL + Conforto</h6>
+                            <h6 class="font-text-branco"><span id="assento-selecionado"></span> - GOL + Conforto</h6>
                             <h6><a id="alterar-links" href="/Pages/SelecionarAssento.html">Alterar assento</a></h6>
                         </div>
                     </div>
@@ -292,8 +292,10 @@
             document.getElementById("logo-username").innerHTML = list_nome[0]
             document.getElementById("profile-name-assento").innerHTML = `${list_nome[0]} ${list_nome[1]}`
             document.getElementById("profile-name_bagagem").innerHTML = `${list_nome[0]} ${list_nome[1]}`
+            
         }
-        
+        document.getElementById("assento-selecionado").innerHTML = sessionStorage.getItem("assento")
+
         document.addEventListener("DOMContentLoaded", get, false)
     </script>
 </html>

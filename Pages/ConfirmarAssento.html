@@ -108,7 +108,7 @@
                 <br>
 
                 <div align="center">
-                    <h6 class="font-text-branco">Assento escolhido <u id="Assento-selecionado">B1</u> GOL+ Conforto - Assento reclinável</h6>
+                    <h6 class="font-text-branco">Assento escolhido <u id="Assento-selecionado">Z#</u> GOL+ Conforto - Assento reclinável</h6>
                 </div>
 
                 <br>
@@ -203,8 +203,9 @@
             var nome = sessionStorage.getItem("nome")
             console.log(nome)
             var list_nome = nome.split(" ")
-            document.getElementById("logo-username").innerHTML = list_nome[0]
+            document.getElementById("logo-username").innerHTML = list_nome[0]            
         }
+        document.getElementById("Assento-selecionado").innerHTML = sessionStorage.getItem("assento")
 
         document.addEventListener("DOMContentLoaded", get, false)
     </script>
