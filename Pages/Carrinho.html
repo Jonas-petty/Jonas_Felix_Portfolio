@@ -186,7 +186,7 @@
                         <div class="col" id="bagagem-info">
                             <h6 class="font-text-branco">Voo de Ida (GRU - REC)</h6>
                             <h6 class="font-text-branco"><span id="profile-name_bagagem"></span></h6>
-                            <h6 class="font-subtitle-azul-claro">* Nenhuma bagagem adquirida</h6>
+                            <h6 class="font-subtitle-azul-claro" id="tipo_bagagem">* Nenhuma bagagem adquirida</h6>
                             <h6><a id="alterar-links" href="/Pages/PersonalizarViagem.html">Adquirir bagagem</a></h6>
                         </div>
                     </div>
@@ -294,7 +294,11 @@
             document.getElementById("profile-name_bagagem").innerHTML = `${list_nome[0]} ${list_nome[1]}`
             
         }
+        // Exibe o assento
         document.getElementById("assento-selecionado").innerHTML = sessionStorage.getItem("assento")
+
+        // Exibe o tipo da bagagem
+        document.getElementById("tipo_bagagem").innerHTML = sessionStorage.getItem("tipoBagagem")
 
         document.addEventListener("DOMContentLoaded", get, false)
     </script>

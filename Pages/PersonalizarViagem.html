@@ -120,7 +120,7 @@
                         <div class="col-10"><label for="inputPassageiro" class="form-label font-text-branco">Compre sua
                                 bagagem com mais de 48 horas de antecedência do seu
                                 voo para garantir desconto.</label>
-                            <select id="inputDocumemento" class="form-select input-op-personalizar">
+                            <select id="bagagem" class="form-select input-op-personalizar inputDocumento ">
                                 <option selected>Adiquirir Bagagem</option>
                                 <option>Bagagem de mão</option>
                                 <option>Mochila de costa</option>
@@ -141,7 +141,7 @@
                     <div class="col" id="col-content-personalizar">
                         <div class="col-10"><label for="inputPassageiro" class="form-label font-text-branco">Viaje com o seu companheiro pertinho de você, aproveite agora para 
                             garantir o espaço do pet na cabine.</label>
-                            <select id="inputDocumemento" class="form-select input-op-personalizar">
+                            <select id="inputDocumento" class="form-select input-op-personalizar inputDocumento">
                                 <option selected>Contratar Dog&Cat Cabine</option>
                                 <option>Cachorro</option>
                                 <option>Gato</option>
@@ -161,7 +161,7 @@
                     <div class="col" id="col-content-personalizar">
                         <div class="col-10"><label for="inputPassageiro" class="form-label font-text-branco">Adquira o serviço Voe Junto e acompanhe cada passo da viagem 
                             de alguém que requer atenção especial à distância.</label>
-                            <select id="inputDocumemento" class="form-select input-op-personalizar">
+                            <select id="inputDocumento" class="form-select input-op-personalizar inputDocumento">
                                 <option selected>Adiquirir Voe Junto</option>
                                 <option>Acompanhante</option>
                                 <option>Cão-guia</option>
@@ -183,7 +183,7 @@
                     </div>
                     <div class="col-3">
                         <div id="div-btn-buscar">
-                            <a class="font-text-branco" id="btn-buscar" href="/Pages/Carrinho.html">Ir para o Carrinho</a>
+                            <a class="font-text-branco" id="btn-buscar" href="/Pages/Carrinho.html" onclick="recolheBagagem()">Ir para o Carrinho</a>
                         </div>
                     </div>
                     <div class="col"></div>
@@ -257,6 +257,14 @@
             document.getElementById("logo-username").innerHTML = list_nome[0]
         }
 
+        // Recolhe tipo de bagagem recolhida
+        function recolheBagagem() {
+          var sel = document.getElementById("bagagem")
+          var opt = sel.options[sel.selectedIndex]
+          console.log(opt.text)
+          sessionStorage.setItem("tipoBagagem", opt.text)
+        }
+        
         document.addEventListener("DOMContentLoaded", get, false)
     </script>
             <script type="text/javascript" src="/js/cookie.js"></script>
