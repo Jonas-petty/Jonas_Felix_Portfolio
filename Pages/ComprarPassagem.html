@@ -155,7 +155,7 @@
         </div>
 
         <br>
-
+        
         <form class="container myform" action="/Pages/BuscarVoos.html">
 
             <br>
@@ -185,7 +185,7 @@
                         <div class="autocomplete" style="width:534px;">
                             <label for="inputnome" class="form-label font-subtitle-branco ">Origem</label>
                             <input class="input-origem-destino" id="myInput" type="text" name="myOrigem"
-                                placeholder="Origem">
+                                placeholder="Origem" required>
                         </div>
                     </form>
                 </fieldset>
@@ -197,7 +197,7 @@
                         <div class="autocomplete" style="width:534px;">
                             <label for="inputnome" class="form-label font-subtitle-branco">Destino</label>
                             <input class="input-origem-destino" id="myData" type="text" name="myDestino"
-                                placeholder="Destino">
+                                placeholder="Destino" required>
                         </div>
                     </form>
                 </fieldset>
@@ -235,7 +235,7 @@
                         </div>
                     </div>
                     <div class="col">
-                            <button id="btn_send_form"  type="submit">Buscar voos</button>
+                            <button id="btn_send_form"  type="submit" onclick="reconheDados()">Buscar voos</button>
                     </div>
                 </div>
 
@@ -415,7 +415,7 @@
         const radioButton1 = document.getElementById("flexRadioDefault1")
         const radioButton2 = document.getElementById("flexRadioDefault2")
 
-
+        // Alterna os tipos de rota
         radioButton1.addEventListener("click", () => {
             console.log("apertado")
             document.getElementById("inputdataVoltar").style.display = "none"
@@ -428,8 +428,21 @@
             document.getElementById("viagem-volta-title").innerHTML = "Data da Viagem de volta"
         })
         
+        // Define a data mínima
         var inputData = new Date()
         document.getElementById("inputdataIda").min = inputData.toISOString().split("T")[0]
+
+        // Reconhe os valores de Origem e Destino
+        function reconheDados() {
+            var origem = document.getElementById("myInput").value
+            var destino = document.getElementById("myData").value
+            console.log(origem)
+            console.log(destino)
+            sessionStorage.setItem("origem", origem)
+            sessionStorage.setItem("destino", destino)
+        }
+        
+        
     </script>
         <script type="text/javascript" src="/js/cookie.js"></script>
         <script type="text/javascript" src="/js/Scriptexterno.js"></script>

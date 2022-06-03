@@ -174,11 +174,11 @@
                     <div class="row" id="voo-content">
                         <div class="col">
                             <h6 id="voo-content-title">ORIGEM</h6>
-                            <h6 id="voo-content-description">GRU - 10:10</h6>
+                            <h6 id="voo-content-description"><span class="aero_origem"></span> - 10:10</h6>
                         </div>  
                         <div class="col">
                             <h6 id="voo-content-title">DESTINO</h6>
-                            <h6 id="voo-content-description">REC - 13:20</h6>
+                            <h6 id="voo-content-description"><span class="aero_destino"></span> - 13:20</h6>
                         </div>
                         <div class="col">
                             <h6 id="voo-content-title">DURAÇÃO</h6>
@@ -209,11 +209,11 @@
                     <div class="row" id="voo-content">
                         <div class="col">
                             <h6 id="voo-content-title">ORIGEM</h6>
-                            <h6 id="voo-content-description">GRU - 14:55</h6>
+                            <h6 id="voo-content-description"><span class="aero_origem"></span> - 14:55</h6>
                         </div>
                         <div class="col">
                             <h6 id="voo-content-title">DESTINO</h6>
-                            <h6 id="voo-content-description">REC - 18:00</h6>
+                            <h6 id="voo-content-description"><span class="aero_destino"></span> - 18:00</h6>
                         </div>
                         <div class="col">
                             <h6 id="voo-content-title">DURAÇÃO</h6>
@@ -244,11 +244,11 @@
                     <div class="row" id="voo-content">
                         <div class="col">
                             <h6 id="voo-content-title">ORIGEM</h6>
-                            <h6 id="voo-content-description">GRU - 23:20</h6>
+                            <h6 id="voo-content-description"><span class="aero_origem"></span> - 23:20</h6>
                         </div>
                         <div class="col">
                             <h6 id="voo-content-title">DESTINO</h6>
-                            <h6 id="voo-content-description">REC - 02:30</h6>
+                            <h6 id="voo-content-description"><span class="aero_destino"></span> - 02:30</h6>
                         </div>
                         <div class="col">
                             <h6 id="voo-content-title">DURAÇÃO</h6>
@@ -280,11 +280,11 @@
                     <div class="row" id="voo-content">
                         <div class="col">
                             <h6 id="voo-content-title">ORIGEM</h6>
-                            <h6 id="voo-content-description">GRU - 05:00</h6>
+                            <h6 id="voo-content-description"><span class="aero_origem"></span> - 05:00</h6>
                         </div>
                         <div class="col">
                             <h6 id="voo-content-title">DESTINO</h6>
-                            <h6 id="voo-content-description">REC - 08:00</h6>
+                            <h6 id="voo-content-description"><span class="aero_destino"></span> - 08:00</h6>
                         </div>
                         <div class="col">
                             <h6 id="voo-content-title">DURAÇÃO</h6>
@@ -315,11 +315,11 @@
                     <div class="row" id="voo-content">
                         <div class="col">
                             <h6 id="voo-content-title">ORIGEM</h6>
-                            <h6 id="voo-content-description">GRU - 08:05</h6>
+                            <h6 id="voo-content-description"><span class="aero_origem"></span> - 08:05</h6>
                         </div>
                         <div class="col">
                             <h6 id="voo-content-title">DESTINO</h6>
-                            <h6 id="voo-content-description">REC - 11:05</h6>
+                            <h6 id="voo-content-description"><span class="aero_destino"></span> - 11:05</h6>
                         </div>
                         <div class="col">
                             <h6 id="voo-content-title">DURAÇÃO</h6>
@@ -350,11 +350,11 @@
                     <div class="row" id="voo-content">
                         <div class="col">
                             <h6 id="voo-content-title">ORIGEM</h6>
-                            <h6 id="voo-content-description">GRU - 13:10</h6>
+                            <h6 id="voo-content-description"><span class="aero_origem"></span> - 13:10</h6>
                         </div>
                         <div class="col">
                             <h6 id="voo-content-title">DESTINO</h6>
-                            <h6 id="voo-content-description">REC - 16:15</h6>
+                            <h6 id="voo-content-description"><span class="aero_destino"></span> - 16:15</h6>
                         </div>
                         <div class="col">
                             <h6 id="voo-content-title">DURAÇÃO</h6>
@@ -447,6 +447,17 @@
             </div>
         </footer>
     </div>
+    <script>
+        function setAero() {
+            var origens = document.getElementsByClassName("aero_origem")
+            var destinos = document.getElementsByClassName("aero_destino")
+            for (var i = 0; i < origens.length; i++) {
+                origens[i].innerHTML = sessionStorage.getItem("origem").split("-")[0]
+                destinos[i].innerHTML = sessionStorage.getItem("destino").split("-")[0]
+            }
+        }
+        document.addEventListener("DOMContentLoaded", setAero, false)
+    </script>
 
 
     <script type="text/javascript" src="/js/cookie.js"></script>
