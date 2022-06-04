@@ -30,68 +30,10 @@
       rel="stylesheet"
     />
 
-    <title>RiseUp!</title>
+    <title>Carrinho</title>
   </head>
 
   <body class="container body main">
-    <!-- Navbar -->
-    <header>
-      <div class="row">
-        <div class="col-2" id="logo">
-          <a
-            class="font-BIGtitle"
-            href="/index.html"
-            Title="Ícone clicável com a logo do projeto, que o leva para a página principal."
-            >RiseUp!</a
-          >
-        </div>
-        <div class="col-8" id="navbar-div">
-          <div class="row">
-            <div class="col">
-              <a
-                class="navbar-links"
-                href="/Pages/Acessibilidade.html"
-                title="Botão de navegação que o leva para a página Acessibilidade"
-                >Acessibilidade</a
-              >
-            </div>
-
-            <div class="col-3">
-              <a class="navbar-links" href="/Pages/ComprarPassagem.html" title="Botão de navegação que o leva para a página Comprar Passagem"
-                >Comprar passagem</a
-              >
-            </div>
-
-            <div class="col-2">
-              <a class="navbar-links" href="/Pages/Check-in.html" title="Botão de navegação que o leva para a página Chek-in">Check-in</a>
-            </div>
-
-            <div class="col">
-              <a class="navbar-links" href="/Pages/StatusVoo.html" title="Botão de navegação que o leva para a página Status de Voo"
-                >Status de voo</a
-              >
-            </div>
-
-            <div class="col">
-              <a class="navbar-links" href="/Pages/Atendimento.html" title="Botão de navegação que o leva para a página Atendimento"
-                >Atendimento</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-            <div id="btn-login">
-              <a id="btn-link" href="/Pages/Login.html"
-                >Bem vindo <span id="logo-username"></span
-              ></a>
-            </div>
-          </div>
-      </div>
-      </div>
-    </header>
-    <!-- Navbar -->
-
-        <br>
 
         <main class="container">
             <br>
@@ -107,6 +49,8 @@
                 <div align="center">
                     <br>
                     <h6 class="font-subtitle-branco">Confira o resumo detalhado da sua viagem</h6>
+
+                    <h1>PUXAR O DADO DE TUDO!</h1>
                 </div>
 
                 <br>
@@ -119,14 +63,14 @@
                     </div>
                     <div class="col">
                         <h6 class="font-subtitle-azul-claro">Voo de Ida</h6>
-                        <h6 class="font-text-branco">G31618</h6>
-                        <h6 class="font-text-branco">Operado por GOL</h6>
-                        <h6 class="font-text-branco">Duração: 03:20</h6>
-                        <h6 class="font-text-branco">Voo direto</h6>
-                        <h6 class="font-subtitle-azul-claro">Guarulhos - GRU</h6>
-                        <h6 class="font-text-branco">22/05/2022 - 10:10</h6>
-                        <h6 class="font-subtitle-azul-claro">Recife - REC</h6>
-                        <h6 class="font-text-branco">22/05/2022 - 13:20</h6>
+                        <h6 class="font-text-branco"><span id="cod_voo">G31618</span></h6>
+                        <h6 class="font-text-branco">Operado por <span id="companhia">GOL</span></h6>
+                        <h6 class="font-text-branco">Duração: <span id="duracao">03:20</span></h6>
+                        <h6 class="font-text-branco">Voo <span id="modo">direto</span></h6>
+                        <h6 class="font-subtitle-azul-claro"><span id="voo_origem">Guarulhos - GRU</span></h6>
+                        <h6 class="font-text-branco"><span id="data_ida">22/05/2022</span> - <span id="hora_ida">10:10</span></h6>
+                        <h6 class="font-subtitle-azul-claro"><span id="voo_destino">Recife - REC</span></h6>
+                        <h6 class="font-text-branco"><span id="data_volta">22/05/2022</span> - <span id="hora_volta">13:20</span></h6>
                     </div> 
                 </div>
 
@@ -144,7 +88,7 @@
                                     <h6 class="font-text-branco">Valor da passagem</h6>
                                 </div>
                                 <div class="col">
-                                    <h6 class="font-subtitle-branco" id="col-precos">R$ 1.226,42</h6>
+                                    <h6 class="font-subtitle-branco" id="col-precos"><span id="preco">R$ 1.226,42</span></h6>
                                 </div>
                             </div>
 
@@ -158,10 +102,6 @@
                             </div>
 
                             <br>
-
-                            <div class="passageiro-total">
-                                <h6 class="font-title-preto">TOTAL R$ 1.274,21</h6>
-                            </div>
                         </div>
                     </div>
 
@@ -171,9 +111,9 @@
                             <img id="img-seat" src="/Images/Seat.png" alt="">
                         </div>
                         <div class="col" id="assento-info">
-                            <h6 class="font-text-branco">Voo de Ida (GRU - REC)</h6>
+                            <h6 class="font-text-branco">Voo de Ida (<span id="ori_des_1">GRU - REC</span>)</h6>
                             <h6 class="font-text-branco"><span id="profile-name-assento"></span></h6>
-                            <h6 class="font-text-branco"><span id="assento-selecionado"></span> - GOL + Conforto</h6>
+                            <h6 class="font-text-branco"><span id="assento">B1</span> - <span id="comp">GOL</span> + Conforto</h6>
                             <h6><a id="alterar-links" href="/Pages/SelecionarAssento.html">Alterar assento</a></h6>
                         </div>
                     </div>
@@ -184,9 +124,9 @@
                             <img id="imgs-personalizar" src="/Images/Luggage.png" alt="">
                         </div>
                         <div class="col" id="bagagem-info">
-                            <h6 class="font-text-branco">Voo de Ida (GRU - REC)</h6>
+                            <h6 class="font-text-branco">Voo de Ida (<span id="ori_des_2">GRU - REC</span>)</h6>
                             <h6 class="font-text-branco"><span id="profile-name_bagagem"></span></h6>
-                            <h6 class="font-subtitle-azul-claro" id="tipo_bagagem">* Nenhuma bagagem adquirida</h6>
+                            <h6 class="font-subtitle-azul-claro">R$ <span id="tot_bagagem">* Nenhuma bagagem adquirida</span></h6>
                             <h6><a id="alterar-links" href="/Pages/PersonalizarViagem.html">Adquirir bagagem</a></h6>
                         </div>
                     </div>
@@ -197,13 +137,13 @@
 
                 <div class="container">
                     <div class="row" id="row-valor-final">
-                        <h6 id="valor-total">Valor total da viagem :</h6>
+                        <h6 class="valor-total">Valor total da viagem :</h6>
                     </div>
 
                     <br>
 
                     <div class="row" id="row-valor-final">
-                        <h6 id="valor-total">R$ 1.274,21</h6>
+                        <h6 class="valor-total">R$ <span id="valor-total">0.000,00</span></h6>
                     </div>
                 </div>
 
@@ -232,59 +172,13 @@
 
         </main>
 
-        <div class="container">
-            <footer class="row row-cols-5 py-5 my-5 border-top">
-                <div class="col">
-                    <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                        <h3 id="nav-footer">RiseUp!</h3>
-                    </a>
-                    <p id="nav-footer">© 2021</p>
-                </div>
+        <br>
 
-                <div class="col">
-
-                </div>
-
-                <div class="col">
-                    <h5 id="nav-footer2">Menu</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="/index.html" id="footer-links" class="nav-link p-0">Home</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="/Pages/Acessibilidade.html" id="footer-links"
-                                class="nav-link p-0">Acessibilidade</a></li>
-                        <li class="nav-item mb-2"><a href="/Pages/ComprarPassagem.html" id="footer-links"
-                                class="nav-link p-0">Comprar passagem</a></li>
-                        <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Check-in</a></li>
-                        <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Status de voo</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col">
-                    <h5 id="nav-footer2">Contato</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Atendimento</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Telefone</a></li>
-                        <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Email</a></li>
-                        <li class="nav-item mb-2"><a href="https://www.instagram.com/mamisbrasil/" target="_blank"
-                                id="footer-links" class="nav-link p-0">Instagram</a></li>
-                    </ul>
-                </div>
-
-                <div class="col">
-                    <h5 id="nav-footer2">Extras</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Sobre nós</a></li>
-                        <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Blog</a></li>
-                    </ul>
-                </div>
-            </footer>
-        </div>
         <script type="text/javascript" src="/js/cookie.js"></script>
         <script type="text/javascript" src="/js/Scriptexterno.js"></script>
     </body>
     <script>
+        // Exibe nome
         function get() {
             var nome = sessionStorage.getItem("nome")
             console.log(nome)
@@ -292,14 +186,48 @@
             document.getElementById("logo-username").innerHTML = list_nome[0]
             document.getElementById("profile-name-assento").innerHTML = `${list_nome[0]} ${list_nome[1]}`
             document.getElementById("profile-name_bagagem").innerHTML = `${list_nome[0]} ${list_nome[1]}`
-            
         }
-        // Exibe o assento
-        document.getElementById("assento-selecionado").innerHTML = sessionStorage.getItem("assento")
 
-        // Exibe o tipo da bagagem
-        document.getElementById("tipo_bagagem").innerHTML = sessionStorage.getItem("tipoBagagem")
+        // Exibe os dados
+        document.getElementById("cod_voo").innerHTML = sessionStorage.getItem("cod_voo")
+        document.getElementById("companhia").innerHTML = sessionStorage.getItem("comp_aerea")
+        document.getElementById("duracao").innerHTML = sessionStorage.getItem("duracao")
+        document.getElementById("modo").innerHTML = sessionStorage.getItem("modo")
 
+        var or = sessionStorage.getItem("origem_completo").split(" ")
+        document.getElementById("voo_origem").innerHTML = `${or[2]} - ${or[0]}`
+        var des = sessionStorage.getItem("destino_completo").split(" ")
+        document.getElementById("voo_destino").innerHTML = `${des[2]} - ${des[0]}`
+
+        var dataIdaErrada = sessionStorage.getItem("dataIda").split("-")
+        var dataIdaFormatada = `${dataIdaErrada[2]}/${dataIdaErrada[1]}/${dataIdaErrada[0]}`
+        document.getElementById("data_ida").innerHTML = dataIdaFormatada
+
+        var dataVoltaErrada = sessionStorage.getItem("dataVolta").split("-")
+        var dataVoltaFormatada = `${dataVoltaErrada[2]}/${dataVoltaErrada[1]}/${dataVoltaErrada[0]}`
+        document.getElementById("data_volta").innerHTML = dataVoltaFormatada
+
+        document.getElementById("hora_ida").innerHTML = sessionStorage.getItem("origem").split("-")[1]
+        document.getElementById("hora_volta").innerHTML = sessionStorage.getItem("destino").split("-")[1]
+
+        var preco = sessionStorage.getItem("preco")
+        document.getElementById("preco").innerHTML = preco
+
+        var pre_bag = sessionStorage.getItem("preco_bagagem")  * 90
+        document.getElementById("tot_bagagem").innerHTML = `${pre_bag},00`
+
+        document.getElementById("assento").innerHTML = sessionStorage.getItem("assento")
+        document.getElementById("comp").innerHTML = sessionStorage.getItem("comp_aerea")
+
+        var ori = sessionStorage.getItem("origem_completo").split(" ")[0]
+        var des = sessionStorage.getItem("destino_completo").split(" ")[0]
+        document.getElementById("ori_des_1").innerHTML = `${ori} - ${des}`
+        document.getElementById("ori_des_2").innerHTML = `${ori} - ${des}`
+
+        var preco = preco.split(" ")[1]
+        var preco_total = Number(preco.replace(".", "").replace(",", ".")) + sessionStorage.getItem("preco_bagagem")  * 90
+        document.getElementById("valor-total").innerHTML = preco_total
+        
         document.addEventListener("DOMContentLoaded", get, false)
     </script>
 </html>

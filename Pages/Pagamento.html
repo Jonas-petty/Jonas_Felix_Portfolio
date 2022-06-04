@@ -30,70 +30,12 @@
       rel="stylesheet"
     />
 
-    <title>RiseUp!</title>
+    <title>Pagamento</title>
   </head>
 
-  <body class="container body main">
-    <!-- Navbar -->
-    <header>
-      <div class="row">
-        <div class="col-2" id="logo">
-          <a
-            class="font-BIGtitle"
-            href="/index.html"
-            Title="Ícone clicável com a logo do projeto, que o leva para a página principal."
-            >RiseUp!</a
-          >
-        </div>
-        <div class="col-8" id="navbar-div">
-          <div class="row">
-            <div class="col">
-              <a
-                class="navbar-links"
-                href="/Pages/Acessibilidade.html"
-                title="Botão de navegação que o leva para a página Acessibilidade"
-                >Acessibilidade</a
-              >
-            </div>
+    <body class="container body main">
 
-            <div class="col-3">
-              <a class="navbar-links" href="/Pages/ComprarPassagem.html" title="Botão de navegação que o leva para a página Comprar Passagem"
-                >Comprar passagem</a
-              >
-            </div>
-
-            <div class="col-2">
-              <a class="navbar-links" href="/Pages/Check-in.html" title="Botão de navegação que o leva para a página Chek-in">Check-in</a>
-            </div>
-
-            <div class="col">
-              <a class="navbar-links" href="/Pages/StatusVoo.html" title="Botão de navegação que o leva para a página Status de Voo"
-                >Status de voo</a
-              >
-            </div>
-
-            <div class="col">
-              <a class="navbar-links" href="/Pages/Atendimento.html" title="Botão de navegação que o leva para a página Atendimento"
-                >Atendimento</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-            <div id="btn-login">
-              <a id="btn-link" href="/Pages/Login.html"
-                >Bem vindo <span id="logo-username"></span
-              ></a>
-            </div>
-          </div>
-      </div>
-      </div>
-    </header>
-    <!-- Navbar -->
-
-    <br>
-
-    <main class="container">
+        <main class="container">
         <br>
 
         <div class="container" align="center">
@@ -105,148 +47,18 @@
 
         <form class="container myform">
 
-            <!-- Nacionalidade -->
             <fieldset class="col-mb-3">
 
-                <br>
-
-                <div align="center">
-                    <h5 class="font-subtitle-branco">Dados do responsável pelo pagamento</h5>
-                </div>
-                <div align="center">
-                    <h6 class="font-text-branco">* Todos os campos são obrigatórios *</h6>
-                </div>
-
-                <br>
-
-                <!-- Nome completo -->
-                <div class="col-md">
-                    <label for="input-username" class="form-label font-text-branco">Nome completo</label>
-                    <input type="text" class="form-control input-passageiro" id="input-username"
-                        placeholder="Digite seu nome">
-                </div>
-
-                <br>
-
-                <div class="row">
-                    <div class="col-md-4"><label for="inputPassageiro" class="form-label font-text-branco">Documento</label>
-                        <select id="inputDocumemento" class="form-select input-passageiro">
-                            <option selected>Selecione</option>
-                            <option>CPF</option>
-                            <option>RG</option>
-                            <option>Passaporte</option>
-                        </select>
-                    </div>
-                    <div class="col-md">
-                        <div class="col-sm-10">
-                            <div class="form-check" id="input-nacionalidade">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1">
-                                <label class="form-check-label font-text-branco" for="flexRadioDefault1">
-                                    Não sou Brasileiro
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <br>
-
-                <div class="row">
-                    <div class="col-md-5">
-                        <label for="input-username" class="form-label font-text-branco">Digite o número</label>
-                        <input type="text" class="form-control input-passageiro" id="input-Numero-Documemento"
-                            placeholder="Ex: 000.000.000-00">
-                    </div>
-
-                    <div class="col-md-4"><label for="inputPassageiro" class="form-label font-text-branco">Nacionalidade</label>
-                        <select id="inputDocumemento" class="form-select input-passageiro">
-                            <option selected>Selecione</option>
-                            <option>Americano</option>
-                            <option>Brasileiro</option>
-                            <option>Chileno</option>
-                        </select>
-                    </div>
-                </div>
-
-                <br>
-
-                <div class="col"><label for="inputPassageiro" class="form-label font-text-branco">País</label>
-                    <select id="" class="form-select input-passageiro">
-                        <option selected>Selecione</option>
-                        <option>Argélia</option>
-                        <option>Brasil</option>
-                        <option>Chile</option>
-                    </select>
-                </div>
-
-                <br>
-
-                <div class="col"><label for="inputPassageiro" class="form-label font-text-branco">Estado</label>
-                    <select id="" class="form-select input-passageiro">
-                        <option selected>Selecione</option>
-                        <option>Argélia</option>
-                        <option>Brasil</option>
-                        <option>Chile</option>
-                    </select>
-                </div>
-
-                <br>
-
-                <div class="col"><label for="inputPassageiro" class="form-label font-text-branco">Cidade</label>
-                    <select id="" class="form-select input-passageiro">
-                        <option selected>Selecione</option>
-                        <option>Argélia</option>
-                        <option>Brasil</option>
-                        <option>Chile</option>
-                    </select>
-                </div>
-
-                <br>
-
-                <div class="col-md">
-                    <label for="input-username" class="form-label font-text-branco">Endereço</label>
-                    <input type="text" class="form-control input-passageiro" id="input-username"
-                        placeholder="Digite seu endereço">
-                </div>
-
-                <br>
-
-                <div class="col-md">
-                    <label for="input-username" class="form-label font-text-branco">Número</label>
-                    <input type="text" class="form-control input-passageiro" id="input-username"
-                        placeholder="Digite o número do endereço">
-                </div>
-
-                <br>
-
-                <div class="col-md">
-                    <label for="input-username" class="form-label font-text-branco">Complemento</label>
-                    <input type="text" class="form-control input-passageiro" id="input-username"
-                        placeholder="Digite um complemento">
-                </div>
-
-                <br>
-
-                <div class="col-md">
-                    <label for="input-username" class="form-label font-text-branco">Telefone celular</label>
-                    <input type="text" class="form-control input-passageiro" id="input-username"
-                        placeholder="+00 (00) 00000-0000">
-                </div>
-
-                <br>
                 <br>
                 <div align="center">
                     <h3 class="font-subtitle-branco">Formas de pagamento</h3>
                 </div>
 
                 <div class="col"><label for="inputPassageiro" class="form-label font-text-branco">Opções</label>
-                    <select id="" class="form-select input-passageiro">
+                    <select id="tipo_pagamento" class="form-select input-passageiro">
                         <option selected>Selecione</option>
-                        <option>Cartão de crédito</option>
-                        <option>Cartão de débito</option>
-                        <option>Paypal</option>
-                        <option>Pix</option>
+                        <option value="1">Cartão de crédito</option>
+                        <option value="2">Cartão de débito</option>
                     </select>
                 </div>
 
@@ -283,22 +95,17 @@
 
                 <br>
 
-                <div class="col"><label for="inputPassageiro" class="form-label font-text-branco">Número de
+                <div class="col"><label for="inputPassageiro" class="form-label font-text-branco" id="l_credito">Número de
                         parcelas</label>
-                    <select id="" class="form-select input-passageiro">
+                    <select id="credito" class="form-select input-passageiro">
                         <option selected>Selecione</option>
                         <option>x 1</option>
                         <option>x 2</option>
                         <option>x 5</option>
                         <option>x 12</option>
                     </select>
-                </div>
-
-                <br>
-
-                <div class="col-md">
-                    <a id="pagamento-link" href=""><i class="bi bi-plus-circle-fill pagamento-icon "></i><span
-                           class="font-text-branco" id="pagamento-text">Pagar com dois cartões</span></a>
+                    <br>
+                    
                 </div>
 
                 <br>
@@ -333,60 +140,26 @@
         </form>
 
         <br>
+        <br>
 
     </main>
 
-    <div class="container">
-        <footer class="row row-cols-5 py-5 my-5 border-top">
-            <div class="col">
-                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                    <h3 id="nav-footer">RiseUp!</h3>
-                </a>
-                <p id="nav-footer">© 2021</p>
-            </div>
+    </body>
+    <script>
+        // Retira o tipo de cartão de acorto com a escolha
+        var tipo = document.getElementById("tipo_pagamento")
 
-            <div class="col">
+        tipo.addEventListener("change", (e) => {
+            if (tipo.value == 2) {
+                document.getElementById("credito").style.display = "none"
+                document.getElementById("l_credito").style.display = "none"
+            } else {
+                document.getElementById("credito").style.display = "block"
+            }
+            
+        })
 
-            </div>
-
-            <div class="col">
-                <h5 id="nav-footer2">Menu</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="/index.html" id="footer-links" class="nav-link p-0">Home</a>
-                    </li>
-                    <li class="nav-item mb-2"><a href="/Pages/Acessibilidade.html" id="footer-links"
-                            class="nav-link p-0">Acessibilidade</a></li>
-                    <li class="nav-item mb-2"><a href="/Pages/ComprarPassagem.html" id="footer-links"
-                            class="nav-link p-0">Comprar passagem</a></li>
-                    <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Check-in</a></li>
-                    <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Status de voo</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col">
-                <h5 id="nav-footer2">Contato</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Atendimento</a>
-                    </li>
-                    <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Telefone</a></li>
-                    <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Email</a></li>
-                    <li class="nav-item mb-2"><a href="https://www.instagram.com/mamisbrasil/" target="_blank"
-                            id="footer-links" class="nav-link p-0">Instagram</a></li>
-                </ul>
-            </div>
-
-            <div class="col">
-                <h5 id="nav-footer2">Extras</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Sobre nós</a></li>
-                    <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Blog</a></li>
-                </ul>
-            </div>
-        </footer>
-    </div>
-
-</body>
+    </script>
     <script type="text/javascript" src="/js/cookie.js"></script>
     <script type="text/javascript" src="/js/Scriptexterno.js"></script>
 </html>

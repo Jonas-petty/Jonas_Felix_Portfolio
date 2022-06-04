@@ -502,7 +502,7 @@ body {
   padding-right: 24px;
 }
 
-#voo {
+.voo {
   background-color: #fff;
   height: 100px;
   width: 100%;
@@ -581,12 +581,69 @@ body {
   margin-left: 20px;
 }
 
-.inputDocumento {
+#inputDocumemento {
   width: 185px;
 }
 
 #input-Numero-Documemento {
   width: 217px;
+}
+
+/*Tarifas*/
+.tarifa-form {
+  background-color: #003373;
+  color: #fff;
+  border-radius: 10px;
+  width: 830px;
+}
+
+.tarifa-eco{
+  margin: 15px;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  border-top: 10px solid #3998b8;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 360px;
+}
+
+.tarifa-premium{
+  margin: 15px;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  border-top: 10px solid #ff6464;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 360px;
+  height: 644.13px;
+}
+
+.tarifa-divider{
+  height: 2px;
+  background-color: #bebebe;
+  margin-top: 10px;
+}
+
+.btn-tarifa-eco{
+  color: #fff;
+  background-color: #003373;
+  border: none;
+  height: 40px;
+
+}
+
+.terifa-desc{
+  margin-top: 7px
+}
+
+.check-icon{
+  color: green;
+  font-size: 24px;
+}
+
+.cancel-icon{
+  color: red;
+  font-size: 24px;
 }
 
 /* Voo Selecionado */
@@ -667,7 +724,7 @@ body {
 }
 
 #assentos-indices {
-  margin-top: 100%;
+  margin-top: 10%;
   font-size: 24px;
   border-bottom: 1px solid red;
 }
@@ -814,7 +871,7 @@ body {
   text-align: center;
 }
 
-#valor-total {
+.valor-total {
   font-size: 32px;
   color: #fff;
 }
@@ -908,6 +965,39 @@ body {
   text-decoration: none;
 }
 
+/* Check-in */
+.dados-checkin {
+  height: 50px;
+}
+
+.passageiro-info{
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 5px;
+  /* padding-inline-start: 10px;
+  padding-inline-end: 10px; */
+  padding-block-start: 10px;
+  padding-block-end: 5px;
+}
+
+.passageiro-info2{
+  width: 600px;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 5px;
+  /* padding-inline-start: 10px;
+  padding-inline-end: 10px; */
+  padding-block-start: 10px;
+  padding-block-end: 5px;
+}
+
+.checkin-form {
+  background-color: #003373;
+  color: #fff;
+  border-radius: 10px;
+  width: max-content;
+}
+
 /* Atendimento */
 
 #contatos-label{
@@ -955,4 +1045,78 @@ body {
 
 .dark_mode #btn_send_form {
   color: yellowgreen;
+}
+
+/* TESTE avião */
+
+.banheiro{
+  margin-top: 400px;
+  padding-inline-start: 50px;
+  padding-inline-end: 50px;
+}
+
+.refeitorio{
+  margin-top: 400px;
+  padding-inline-start: 50px;
+  padding-inline-end: 50px;
+}
+
+.banheiro2{
+  margin-top: 200px;
+  padding-inline-start: 50px;
+  padding-inline-end: 50px;
+}
+
+.refeitorio2{
+  margin-top: 200px;
+  padding-inline-start: 50px;
+  padding-inline-end: 50px;
+}
+
+.icons-plane{
+  height: 46px;
+}
+
+.icons-plane2{
+  font-size: 64px;
+}
+
+.margin-title{
+  margin-top: 30px;
+}
+
+.div-banheiro{
+  border: 1px solid silver;
+  padding-block-start: 60px;
+  padding-block-end: 90px;
+  height: 60px;
+  border-top-left-radius: 120px;
+}
+
+.div-restaurant{
+  border: 1px solid silver;
+  padding-block-start: 60px;
+  padding-block-end: 90px;
+  height: 60px;
+  border-top-right-radius: 120px;
+}
+
+.div-banheiro2{
+  border: 1px solid silver;
+  padding-block-start: 60px;
+  padding-block-end: 90px;
+  height: 60px;
+  border-bottom-left-radius: 120px;
+}
+
+.div-restaurant2{
+  border: 1px solid silver;
+  padding-block-start: 60px;
+  padding-block-end: 90px;
+  height: 60px;
+  border-bottom-right-radius: 120px;
+}
+
+.saidas{
+  margin-top: 100px;
 }

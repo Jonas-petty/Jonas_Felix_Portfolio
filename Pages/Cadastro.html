@@ -30,7 +30,7 @@
       rel="stylesheet"
     />
 
-    <title>Comprar Passagem</title>
+    <title>Cadastro</title>
   </head>
 
   <body class="container body main">
@@ -353,7 +353,7 @@
             <a
               id="text-necessidades"
               class="font-text-branco"
-              href="/Main/Pages/NecessidadesEspeciais.html"
+              href="/Pages/NecessidadesEspeciais.html"
               ><i class="bi bi-plus-circle-fill"></i
               ><span>
                 Você precisa de atendimento especial? Ex: Idoso, gestante,
@@ -374,7 +374,7 @@
               <div class="font-text-branco" id="div-btn-buscar">
                 <a
                   id="btn-buscar"
-                  href="/Pages/NecessidadesEspeciais.html"
+                  href="/Pages/VooSelecionado.html"
                   onclick="store()"
                   >Continuar</a
                 >
@@ -479,10 +479,11 @@
     <script type="text/javascript" src="/js/Scriptexterno.js"></script>
   </body>
   <script>
+    // Salva o nome
     function store() {
       var nome = document.getElementById("input-name").value;
       sessionStorage.setItem("nome", nome);
-      console.logf(`Nome: ${nome} cadastrado!`);
+      console.log(`Nome: ${nome} cadastrado!`);
     }
   </script>
 </html>

@@ -82,50 +82,12 @@ function dataAtual() {
 	document.getElementById("dataAtual").innerHTML = data.toLocaleDateString()
 }
 
-// Recolhe o valor dos assentos
-/*
-var res = document.getElementById("resultado")
-
-const onClick = function() {
-	console.log(this.id)
-	sessionStorage.setItem("assento", this.id)
-}
-
-    document.getElementById("A1").onclick = onClick
-    document.getElementById("A2").onclick = onClick
-    document.getElementById("A3").onclick = onClick
-	document.getElementById("A6").onclick = onClick
-    document.getElementById("A10").onclick = onClick
-
-    document.getElementById("B1").onclick = onClick
-	document.getElementById("B2").onclick = onClick
-	document.getElementById("B3").onclick = onClick
-	document.getElementById("B4").onclick = onClick
-	document.getElementById("B9").onclick = onClick
-
-	document.getElementById("C1").onclick = onClick
-	document.getElementById("C2").onclick = onClick
-	document.getElementById("C3").onclick = onClick
-	document.getElementById("C6").onclick = onClick
-
-	document.getElementById("D1").onclick = onClick
-	document.getElementById("D2").onclick = onClick
-	document.getElementById("D3").onclick = onClick
-
-	document.getElementById("E1").onclick = onClick
-	document.getElementById("E2").onclick = onClick
-	document.getElementById("E3").onclick = onClick
-
-	document.getElementById("F1").onclick = onClick
-	document.getElementById("F2").onclick = onClick
-	document.getElementById("F3").onclick = onClick
-
-*/
 // Inicia o sistema
 
 function iniciadora() {
 	verificaEstado()
 	dataAtual()
+	dataMinima()
 }
 
 document.addEventListener("DOMContentLoaded", iniciadora, false)

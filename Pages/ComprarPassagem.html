@@ -155,8 +155,8 @@
         </div>
 
         <br>
-        
-        <form class="container myform" action="/Pages/BuscarVoos.html">
+        <!---->
+        <form name="myForm" class="container myform" action="/Pages/Tarifas.html" onsubmit="return validar()">
 
             <br>
 
@@ -208,7 +208,6 @@
                     <label for="inputPassageiro" class="form-label font-subtitle-branco">Passageiros</label>
                     <select id="inputPassageiro" class="form-select input-passageiro">
                         <option selected>1 adulto(s) + 12 anos</option>
-                        <option>2 adulto(s) + 12 anos</option>
                     </select>
                 </div>
 
@@ -222,8 +221,8 @@
                 <br>
 
                 <div class="col-md">
-                    <label for="inputdataVoltar" class="form-label font-subtitle-branco"><span id="viagem-volta-title">Data da Viagem de volta</span></label>
-                    <input type="date" class="form-control input-passageiro" id="inputdataVoltar">
+                    <label for="inputdataVolta" class="form-label font-subtitle-branco"><span id="viagem-volta-title">Data da Viagem de volta</span></label>
+                    <input type="date" class="form-control input-passageiro" id="inputdataVolta">
                 </div>
 
                 <br>
@@ -231,11 +230,11 @@
                 <div class="row" id="section-btns-comprar" align="middle">
                     <div class="col">
                         <div id="div-btn-voltar">
-                            <a id="btn-voltar" href="/index.html">Voltar</a>
+                            <a class="font-text-branco" id="btn-voltar" href="/index.html">Voltar</a>
                         </div>
                     </div>
                     <div class="col">
-                            <button id="btn_send_form"  type="submit" onclick="reconheDados()">Buscar voos</button>
+                            <button class="font-text-branco" id="btn_send_form"  type="submit" onclick="reconheDados()">Prosseguir</button>
                     </div>
                 </div>
 
@@ -415,34 +414,57 @@
         const radioButton1 = document.getElementById("flexRadioDefault1")
         const radioButton2 = document.getElementById("flexRadioDefault2")
 
-        // Alterna os tipos de rota
+
         radioButton1.addEventListener("click", () => {
-            console.log("apertado")
-            document.getElementById("inputdataVoltar").style.display = "none"
+            console.log("apertado1")
+            document.getElementById("inputdataVolta").style.display = "none"
             document.getElementById("viagem-volta-title").innerHTML = ""
+            sessionStorage.setItem("esconder", "1")
         })
 
         radioButton2.addEventListener("click", () => {
-            console.log("apertado")
-            document.getElementById("inputdataVoltar").style.display = "block"  
+            console.log("apertado2")
+            document.getElementById("inputdataVolta").style.display = "block"  
             document.getElementById("viagem-volta-title").innerHTML = "Data da Viagem de volta"
+            sessionStorage.setItem("esconder", "0")
         })
         
         // Define a data mínima
         var inputData = new Date()
         document.getElementById("inputdataIda").min = inputData.toISOString().split("T")[0]
 
-        // Reconhe os valores de Origem e Destino
+        // Reconhe os valores de Origem e Destino e data de Ida e Volta
         function reconheDados() {
+            // Origem e Destino
             var origem = document.getElementById("myInput").value
             var destino = document.getElementById("myData").value
+            // Data Ida e Volta
+            var dataIda = document.getElementById("inputdataIda").value
+            var dataVolta = document.getElementById("inputdataVolta").value
+
             console.log(origem)
             console.log(destino)
-            sessionStorage.setItem("origem", origem)
-            sessionStorage.setItem("destino", destino)
+            console.log(dataIda)
+            console.log(dataVolta)
+
+            sessionStorage.setItem("origem_completo", origem)
+            sessionStorage.setItem("destino_completo", destino)
+
+            sessionStorage.setItem("dataIda", dataIda)
+            sessionStorage.setItem("dataVolta", dataVolta)
         }
-        
-        
+
+        // valida o formulário
+        function validar() {
+            var origem = document.getElementById("myInput")
+            var destino = document.getElementById("myData")
+            if (origem.value === destino.value) {
+                alert("Os destino dever ser diferente da origem")
+                origem.focus()
+                return false
+            }
+        }
+
     </script>
         <script type="text/javascript" src="/js/cookie.js"></script>
         <script type="text/javascript" src="/js/Scriptexterno.js"></script>

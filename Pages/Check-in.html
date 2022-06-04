@@ -30,7 +30,7 @@
       rel="stylesheet"
     />
 
-    <title>RiseUp!</title>
+    <title>Check-in</title>
   </head>
 
   <body class="container body main">
@@ -98,11 +98,12 @@
             <div id="divider-section"></div>
         </div>
 
+        <h1>PUXAR DADO DE TUDO</h1>
+
         <br>
 
         <form class="container myform">
 
-            <!-- Nacionalidade -->
             <fieldset class="col-mb-3">
 
                 <br>
@@ -116,29 +117,18 @@
 
                 <br>
 
-                <div class="col"><label for="inputPassageiro" class="form-label font-subtitle-branco">Tipo</label>
-                    <select id="" class="form-select input-passageiro">
-                        <option selected>Escolha uma opção</option>
-                        <option>Check-in Tradicional (Balcão de Atendimento)</option>
-                        <option>Check-in automatizado no aeroporto (Quiosques/Totens)</option>
-                        <option>Check-in online</option>
-                    </select>
-                </div>
-
-                <br>
-
                 <div class="col-md">
                     <label for="input-username" class="form-label font-subtitle-branco">Código da reserva</label>
-                    <input type="text" class="form-control input-passageiro" id="input-username"
+                    <input type="text" class="form-control input-passageiro" id="input-cod"
                         placeholder="Digite o código da reserva">
                 </div>
 
                 <br>
 
                 <div class="col-md">
-                    <label for="input-username" class="form-label font-subtitle-branco">De onde parte seu voo?</label>
-                    <input type="text" class="form-control input-passageiro" id="input-username"
-                        placeholder="Qual a sua origem?">
+                    <label for="input-username" class="form-label font-subtitle-branco">Nome o passageiro</label>
+                    <input type="text" class="form-control input-passageiro" id="input-name"
+                        placeholder="Digite o nome">
                 </div>
 
                 <br>
@@ -160,7 +150,7 @@
                     </div>
                     <div class="col">
                         <div id="div-btn-buscar">
-                            <a class="font-text-branco" id="btn-buscar" href="#">Iniciar</a>
+                            <a class="font-text-branco" id="btn-buscar" href="/Pages/Check-inInfo.html">Iniciar</a>
                         </div>
                     </div>
                 </div>
@@ -224,8 +214,15 @@
             </div>
         </footer>
     </div>
-    <script type="text/javascript" src="/js/cookie.js"></script>
-    <script type="text/javascript" src="/js/Scriptexterno.js"></script>
+
 </body>
+  <script>
+    // Preenche inputs com os dados
+    document.getElementById("input-cod").value = sessionStorage.getItem("cod_voo")
+    document.getElementById("input-name").value = sessionStorage.getItem("nome")
+  </script>
+c
+  <script type="text/javascript" src="/js/cookie.js"></script>
+  <script type="text/javascript" src="/js/Scriptexterno.js"></script>
 
 </html>

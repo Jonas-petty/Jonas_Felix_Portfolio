@@ -30,7 +30,7 @@
       rel="stylesheet"
     />
 
-    <title>RiseUp!</title>
+    <title>Login</title>
   </head>
 
   <body class="container body main">
@@ -104,7 +104,7 @@
 
                 <div class="col-md">
                     <label for="input-username" class="form-label font-subtitle-branco">Usuário</label>
-                    <input type="text" class="form-control input-passageiro" id="input-username"
+                    <input type="text" class="form-control input-passageiro" id="input-name"
                         placeholder="Nome de usuário">
                 </div>
 
@@ -136,17 +136,7 @@
                     </div>
                     <div class="col">
                         <div id="div-btn-buscar">
-                            <a class="font-text-branco" id="btn-buscar" href="/Pages/VooSelecionado.html">Prosseguir</a>
-                        </div>
-                    </div>
-                </div>
-
-                <br>
-
-                <div class="row" id="section-btns-comprar" align="middle">
-                    <div class="col">
-                        <div id="div-sem-login">
-                            <a class="font-text-branco" id="btn-sem-login" href="/Pages/VooSelecionado.html">Continuar sem login</a>
+                            <a class="font-text-branco" id="btn-buscar" href="/Pages/VooSelecionado.html" onclick="store()">Prosseguir</a>
                         </div>
                     </div>
                 </div>
@@ -209,6 +199,14 @@
             </footer>
         </div>
     </body>
+    <script>
+      // Salva o nome
+      function store() {
+        var nome = document.getElementById("input-name").value;
+        sessionStorage.setItem("nome", nome);
+        console.log(`Nome: ${nome} cadastrado!`);
+    }
+    </script>
     <script type="text/javascript" src="/js/cookie.js"></script>
     <script type="text/javascript" src="/js/Scriptexterno.js"></script>
 </html>

@@ -30,68 +30,11 @@
       rel="stylesheet"
     />
 
-    <title>RiseUp!</title>
+    <title>Personalizar Viagem</title>
   </head>
 
   <body class="container body main">
-    <!-- Navbar -->
-    <header>
-      <div class="row">
-        <div class="col-2" id="logo">
-          <a
-            class="font-BIGtitle"
-            href="/index.html"
-            Title="Ícone clicável com a logo do projeto, que o leva para a página principal."
-            >RiseUp!</a
-          >
-        </div>
-        <div class="col-8" id="navbar-div">
-          <div class="row">
-            <div class="col">
-              <a
-                class="navbar-links"
-                href="/Pages/Acessibilidade.html"
-                title="Botão de navegação que o leva para a página Acessibilidade"
-                >Acessibilidade</a
-              >
-            </div>
-
-            <div class="col-3">
-              <a class="navbar-links" href="/Pages/ComprarPassagem.html" title="Botão de navegação que o leva para a página Comprar Passagem"
-                >Comprar passagem</a
-              >
-            </div>
-
-            <div class="col-2">
-              <a class="navbar-links" href="/Pages/Check-in.html" title="Botão de navegação que o leva para a página Chek-in">Check-in</a>
-            </div>
-
-            <div class="col">
-              <a class="navbar-links" href="/Pages/StatusVoo.html" title="Botão de navegação que o leva para a página Status de Voo"
-                >Status de voo</a
-              >
-            </div>
-
-            <div class="col">
-              <a class="navbar-links" href="/Pages/Atendimento.html" title="Botão de navegação que o leva para a página Atendimento"
-                >Atendimento</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-2">
-            <div id="btn-login">
-              <a id="btn-link" href="/Pages/Login.html"
-                >Bem vindo <span id="logo-username"></span
-              ></a>
-            </div>
-          </div>
-      </div>
-      </div>
-    </header>
-    <!-- Navbar -->
-
-        <br>
+    
 
         <main class="container">
             <br>
@@ -120,12 +63,17 @@
                         <div class="col-10"><label for="inputPassageiro" class="form-label font-text-branco">Compre sua
                                 bagagem com mais de 48 horas de antecedência do seu
                                 voo para garantir desconto.</label>
-                            <select id="bagagem" class="form-select input-op-personalizar inputDocumento ">
+                                <label for="inputPassageiro" class="form-label font-text-branco">Todos os passageiros têm direito à uma mala de mão de 10 kg nas dimensões 35 x 25 x 55 cm (comprimento x largura x altura)</label>
+                                <label for="inputPassageiro" class="form-label font-text-branco">Se uma bagagem ultrapassar 23 kg será cobrado excesso de peso.</label>  
+                                <input type="number" name="tot_bagagem" id="tot_bagagem" min="0" max="3" class=" form-control input-op-personalizar" required>
+                            <!--<select id="inputDocumemento" class="form-select input-op-personalizar">
                                 <option selected>Adiquirir Bagagem</option>
                                 <option>Bagagem de mão</option>
                                 <option>Mochila de costa</option>
                                 <option>Maleiro</option>
-                            </select>
+                            </select>-->
+                            <br>
+                            <h6>R$ <span id="preco">00,00</span></h6>
                         </div>
                     </div>
                 </div>
@@ -141,7 +89,7 @@
                     <div class="col" id="col-content-personalizar">
                         <div class="col-10"><label for="inputPassageiro" class="form-label font-text-branco">Viaje com o seu companheiro pertinho de você, aproveite agora para 
                             garantir o espaço do pet na cabine.</label>
-                            <select id="inputDocumento" class="form-select input-op-personalizar inputDocumento">
+                            <select id="inputDocumemento" class="form-select input-op-personalizar">
                                 <option selected>Contratar Dog&Cat Cabine</option>
                                 <option>Cachorro</option>
                                 <option>Gato</option>
@@ -161,7 +109,7 @@
                     <div class="col" id="col-content-personalizar">
                         <div class="col-10"><label for="inputPassageiro" class="form-label font-text-branco">Adquira o serviço Voe Junto e acompanhe cada passo da viagem 
                             de alguém que requer atenção especial à distância.</label>
-                            <select id="inputDocumento" class="form-select input-op-personalizar inputDocumento">
+                            <select id="inputDocumemento" class="form-select input-op-personalizar">
                                 <option selected>Adiquirir Voe Junto</option>
                                 <option>Acompanhante</option>
                                 <option>Cão-guia</option>
@@ -178,12 +126,12 @@
                     <div class="col"></div>
                     <div class="col-3">
                         <div id="div-btn-voltar">
-                            <a class="font-text-branco" id="btn-voltar" href="/Pages/DetalhesVoo.html ">Voltar</a>
+                            <a class="font-text-branco" id="btn-voltar" href="/Pages/ConfirmarAssento.html ">Voltar</a>
                         </div>
                     </div>
                     <div class="col-3">
                         <div id="div-btn-buscar">
-                            <a class="font-text-branco" id="btn-buscar" href="/Pages/Carrinho.html" onclick="recolheBagagem()">Ir para o Carrinho</a>
+                            <a class="font-text-branco" id="btn-buscar" href="/Pages/Carrinho.html">Ir para o Carrinho</a>
                         </div>
                     </div>
                     <div class="col"></div>
@@ -198,58 +146,11 @@
 
         </main>
 
-        <div class="container">
-            <footer class="row row-cols-5 py-5 my-5 border-top">
-                <div class="col">
-                    <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                        <h3 id="nav-footer">RiseUp!</h3>
-                    </a>
-                    <p id="nav-footer">© 2021</p>
-                </div>
-
-                <div class="col">
-
-                </div>
-
-                <div class="col">
-                    <h5 id="nav-footer2">Menu</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="/index.html" id="footer-links" class="nav-link p-0">Home</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="/Pages/Acessibilidade.html" id="footer-links"
-                                class="nav-link p-0">Acessibilidade</a></li>
-                        <li class="nav-item mb-2"><a href="/Pages/ComprarPassagem.html" id="footer-links"
-                                class="nav-link p-0">Comprar passagem</a></li>
-                        <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Check-in</a></li>
-                        <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Status de voo</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col">
-                    <h5 id="nav-footer2">Contato</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Atendimento</a>
-                        </li>
-                        <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Telefone</a></li>
-                        <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Email</a></li>
-                        <li class="nav-item mb-2"><a href="https://www.instagram.com/mamisbrasil/" target="_blank"
-                                id="footer-links" class="nav-link p-0">Instagram</a></li>
-                    </ul>
-                </div>
-
-                <div class="col">
-                    <h5 id="nav-footer2">Extras</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Sobre nós</a></li>
-                        <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Blog</a></li>
-                    </ul>
-                </div>
-            </footer>
-        </div>
+        <br>
 
     </body>
     <script>
+        // Exibe nome
         function get() {
             var nome = sessionStorage.getItem("nome")
             console.log(nome)
@@ -257,14 +158,14 @@
             document.getElementById("logo-username").innerHTML = list_nome[0]
         }
 
-        // Recolhe tipo de bagagem recolhida
-        function recolheBagagem() {
-          var sel = document.getElementById("bagagem")
-          var opt = sel.options[sel.selectedIndex]
-          console.log(opt.text)
-          sessionStorage.setItem("tipoBagagem", opt.text)
+        // Calcula preco e exibe
+        const onClick = function() {
+            document.getElementById("preco").innerHTML = `${this.value * 90},00`
+            sessionStorage.setItem("preco_bagagem", this.value)
         }
-        
+
+        document.getElementById("tot_bagagem").onclick = onClick
+
         document.addEventListener("DOMContentLoaded", get, false)
     </script>
             <script type="text/javascript" src="/js/cookie.js"></script>

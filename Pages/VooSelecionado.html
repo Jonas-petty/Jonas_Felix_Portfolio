@@ -30,7 +30,7 @@
       rel="stylesheet"
     />
 
-    <title>RiseUp!</title>
+    <title>Voo Selecionado</title>
   </head>
 
   <body class="container body main">
@@ -105,41 +105,38 @@
       <section class="container" id="section-buscarvoos">
         <div align="center">
           <br>
-          <h6 class="font-subtitle-branco">Escolha o voo</h6>
+          <h6 class="font-subtitle-branco">Voo de IDA - <span id="tipoVooIda">PUXAR O DADO</span></h6>
+          <h6 class="font-subtitle-branco"><span id="dataIda">PUXAR A DATA DA IDA</span></h6>
         </div>
 
         <!-- Voo 1 -->
-        <div class="container row" id="voo" style="margin: 0%">
+        <div class="container row voo" id="voo_1" style="margin: 0%">
           <div class="row" id="voo-content">
             <div class="col">
               <h6 id="voo-content-title">Passageiro</h6>
               <h6 id="voo-content-description">
-                <span id="profile-name"></span>
+                <span id="profile-name_ida"></span>
               </h6>
             </div>
             <div class="col">
               <h6 id="voo-content-title">Origem</h6>
-              <h6 id="voo-content-description">GRU - 10:10</h6>
+              <h6 id="voo-content-description"><span id="aero_origem_ida"></span></h6>
             </div>
             <div class="col">
               <h6 id="voo-content-title">Destino</h6>
-              <h6 id="voo-content-description">REC - 13:20</h6>
+              <h6 id="voo-content-description"><span id="aero_destino_ida"></span></h6>
+            </div>
+            <div class="col">
+              <h6 id="voo-content-title">Voo</h6>
+              <h6 id="voo-content-description"><span id="cod_voo_ida">PUXAR O CODIGO</span></h6>
             </div>
             <div class="col">
               <h6 id="voo-content-title">Companhia</h6>
-              <h6 id="voo-content-description"><u>Gol</u></h6>
+              <h6 id="voo-content-description"><span id="comp_ida">PUXAR O DADO</span></h6>
             </div>
             <div class="col">
-              <h6 id="voo-content-title">Benefícios</h6>
-              <div>
-                <i class="bi bi-egg-fried" id="icons-beneficiosgol"></i>
-                <i class="bi bi-youtube" id="icons-beneficiosgol"></i>
-                <i class="bi bi-wifi" id="icons-beneficiosgol"></i>
-              </div>
-            </div>
-            <div class="col">
-              <h6 id="voo-content-title">Valor Final</h6>
-              <h6 id="voo-content-description">R$ 1.226,42</h6>
+              <h6 id="voo-content-title">Tarifa</h6>
+              <h6 id="voo-content-description"><span id="tarifa_ida">PUXAR O DADO</span></h6>
             </div>
             <div class="col">
               <a id="link-selecionar" href="/Pages/SelecionarAssento.html"
@@ -148,6 +145,54 @@
             </div>
           </div>
         </div>
+
+        <br><br>
+        <section class="container" id="section-buscarvoos">
+          <div align="center">
+            <br>
+            <h6 class="font-subtitle-branco" id="text_1">Voo de VOLTA - <span id="tipoVooVolta">PUXAR O DADO</span></h6>
+            <h6 class="font-subtitle-branco" id="text_2"><span id="dataVolta">PUXAR A DATA DA VOLTA</span></h6>
+          </div>
+
+          <!-- Voo 2 -->
+          <div class="container row voo" id="voo_2" style="margin: 0%">
+            <div class="row" id="voo-content">
+              <div class="col">
+                <h6 id="voo-content-title">Passageiro</h6>
+                <h6 id="voo-content-description">
+                  <span id="profile-name_volta"></span>
+                </h6>
+              </div>
+              <div class="col">
+                <h6 id="voo-content-title">Origem</h6>
+                <h6 id="voo-content-description"><span id="aero_origem_volta"></span></h6>
+              </div>
+              <div class="col">
+                <h6 id="voo-content-title">Destino</h6>
+                <h6 id="voo-content-description"><span id="aero_destino_volta"></span></h6>
+              </div>
+              <div class="col">
+                <h6 id="voo-content-title">Voo</h6>
+                <h6 id="voo-content-description"><span id="cod_voo_volta">PUXAR O CODIGO</span></h6>
+              </div>
+              <div class="col">
+                <h6 id="voo-content-title">Companhia</h6>
+                <h6 id="voo-content-description"><span id="comp_volta">PUXAR O DADO</span></h6>
+              </div>
+              <div class="col">
+                <h6 id="voo-content-title">Tarifa</h6>
+                <h6 id="voo-content-description"><span id="tarifa_volta">PUXAR O DADO</span></h6>
+              </div>
+              <div class="col">
+                <a id="link-selecionar" href="/Pages/SelecionarAssento.html"
+                  ><h6 class="font-text-branco" id="div-selecionarVoo">Selecionar Assento</h6></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <br>
+          <!--<h1>ESSAS OPÇÕES SÓ PODEM APARECER SE O VOO FOR DE IDA E VOLTA NA HORA DA COMPRA.</h1>-->
 
         <br />
 
@@ -261,10 +306,47 @@
       console.log(nome);
       var list_nome = nome.split(" ");
       document.getElementById("logo-username").innerHTML = list_nome[0];
-      document.getElementById(
-        "profile-name"
-      ).innerHTML = `${list_nome[0]} ${list_nome[1]}`;
+      document.getElementById("profile-name_ida").innerHTML = `${list_nome[0]} ${list_nome[1]}`;
+      document.getElementById("profile-name_volta").innerHTML = `${list_nome[0]} ${list_nome[1]}`;
     }
+    // Exibe a data de Ida e volta
+    var dataIdaErrada = sessionStorage.getItem("dataIda").split("-")
+    var dataIdaFormatada = `${dataIdaErrada[2]}/${dataIdaErrada[1]}/${dataIdaErrada[0]}`
+    document.getElementById("dataIda").innerHTML = dataIdaFormatada
+
+    var dataVoltaErrada = sessionStorage.getItem("dataVolta").split("-")
+    var dataVoltaFormatada = `${dataVoltaErrada[2]}/${dataVoltaErrada[1]}/${dataVoltaErrada[0]}`
+    document.getElementById("dataVolta").innerHTML = dataVoltaFormatada
+
+    // Exibe o tipo do voo
+    document.getElementById("tipoVooIda").innerHTML = sessionStorage.getItem("tipo_voo")
+    document.getElementById("tipoVooVolta").innerHTML = sessionStorage.getItem("tipo_voo")
+    document.getElementById("tarifa_ida").innerHTML = sessionStorage.getItem("tipo_voo")
+    document.getElementById("tarifa_volta").innerHTML = sessionStorage.getItem("tipo_voo")
+
+    // Exibe origem e destino
+    document.getElementById("aero_origem_ida").innerHTML = sessionStorage.getItem("origem")
+    document.getElementById("aero_destino_ida").innerHTML = sessionStorage.getItem("destino")
+    document.getElementById("aero_origem_volta").innerHTML = sessionStorage.getItem("origem")
+    document.getElementById("aero_destino_volta").innerHTML = sessionStorage.getItem("destino")
+
+    // Exibe o voo
+    document.getElementById("cod_voo_ida").innerHTML = sessionStorage.getItem("cod_voo")
+    document.getElementById("cod_voo_volta").innerHTML = sessionStorage.getItem("cod_voo")
+
+    // Exibe companhia
+    document.getElementById("comp_ida").innerHTML = sessionStorage.getItem("comp_aerea")
+    document.getElementById("comp_volta").innerHTML = sessionStorage.getItem("comp_aerea")
+
+    // Esconde volta se preciso
+    console.log(sessionStorage.getItem("esconder"))
+    if (sessionStorage.getItem("esconder") === "1") {
+      document.getElementById("voo_2").style.display = "none"
+      document.getElementById("text_1").style.display = "none"
+      document.getElementById("text_1").style.display = "none"
+      document.getElementById("dataVolta").style.display = "none"
+    }
+    
 
     document.addEventListener("DOMContentLoaded", get, false);
   </script>
