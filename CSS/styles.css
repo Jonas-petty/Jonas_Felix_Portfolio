@@ -24,6 +24,18 @@ body {
   background-color:rgba(255, 255, 255, 0.6);
 }
 
+.main2 {
+  font-family: "Fredoka One";
+}
+
+.body2 {
+  background-color:rgba(255, 255, 255, 0);
+}
+
+.footer{
+  margin-top: 20%;
+}
+
 /* Font patterns */
 
 .font-BIGtitle {
@@ -1119,4 +1131,77 @@ body {
 
 .saidas{
   margin-top: 100px;
+}
+
+/* Perfil */
+
+.div-perfil{
+  margin-top: 2%;
+}
+
+.foto-perfil{
+  width:120px;
+  border-radius: 100%;
+}
+
+.perfil-icons{
+  color: #ff6464;
+}
+
+.perfil-icons-lg{
+  font-size: 24px;
+  color: #ff6464;
+}
+
+.perfil-icons-xg{
+  font-size: 32px;
+  color: #ff6464;
+}
+
+.div-descricao{
+  margin-top: 5%;
+}
+
+.div-descricao2{
+  margin-top: 5%;
+  margin-left: 6px;
+}
+
+.perfil-aviao{
+  height: 24px;
+}
+
+.container-detalhes{
+  margin-top: 2%;
+  background-color: #fff;
+  border-radius: 6px;
+  padding-block-start: 20px;
+  padding-block-end: 10px;
+}
+
+.container-detalhes2{
+  text-align: center;
+  margin-top: 2%;
+  margin: 2%;
+  background-color: #fff;
+  border-radius: 6px;
+  padding-block-start: 20px;
+  padding-block-end: 10px;
+}
+
+.div-atalhos{
+  margin: 0 auto;
+  width: 60%;
+}
+
+.text-atalhos{
+  margin-top: 10px;
+}
+
+.div-btn-atalhos{
+  background-image: linear-gradient(to right, #003373, #3998b8);
+}
+
+.btn-link-atalhos{
+  text-decoration: none
 }

@@ -33,7 +33,7 @@
     <title>Status de Voo</title>
   </head>
 
-  <body class="container body main">
+  <body class="container body2 main2">
   
     <br />
 
@@ -41,11 +41,9 @@
       <br />
 
       <div class="container" align="center">
-        <h4 class="font-title-preto">Status de Voo</h4>
+        <h4 class="font-title-branco">Status de Voo</h4>
         <div id="divider-section"></div>
       </div>
-
-      <h1>PUXAR DADO DE TUDO</h1>
 
       <br />
 
@@ -53,7 +51,7 @@
         <br />
 
         <div align="center">
-          <h5 class="font-subtitle-branco">Olá (Nome do usuário)</h5>
+          <h5 class="font-subtitle-branco">Olá <span id="nome">(Nome do usuário)</span></h5>
         </div>
         <div align="center">
           <h6 class="font-text-branco">Segue os dados do seu voo</h6>
@@ -66,27 +64,27 @@
         <div class="row passageiro-info">
           <div class="col">
             <h6 class="font-subtitle-azul">Voo</h6>
-            <h6 class="font-text-preto">G3 1618</h6>
+            <h6 class="font-text-preto"><span id="cod_voo">G3 1618</span></h6>
           </div>
           <div class="col">
             <h6 class="font-subtitle-azul">Origem</h6>
-            <h6 class="font-text-preto">GRU</h6>
+            <h6 class="font-text-preto"><span id="origem">GRU</span></h6>
           </div>
           <div class="col">
             <h6 class="font-subtitle-azul">Destino</h6>
-            <h6 class="font-text-preto">REC</h6>
+            <h6 class="font-text-preto"><span id="destino">REC</span></h6>
           </div>
           <div class="col">
             <h6 class="font-subtitle-azul">Data</h6>
-            <h6 class="font-text-preto">03/06</h6>
+            <h6 class="font-text-preto"><span id="data">03/06</span></h6>
           </div>
           <div class="col">
             <h6 class="font-subtitle-azul">Hora</h6>
-            <h6 class="font-text-preto">12:00</h6>
+            <h6 class="font-text-preto"><span id="hora">12:00</span></h6>
           </div>
           <div class="col">
             <h6 class="font-subtitle-azul">Tipo</h6>
-            <h6 class="font-text-preto">Direto</h6>
+            <h6 class="font-text-preto"><span id="tipo">Direto</span></h6>
           </div>
         </div>
 
@@ -109,8 +107,27 @@
 
     </main>
 
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
     
-    <script type="text/javascript" src="/js/cookie.js"></script>
-    <script type="text/javascript" src="/js/Scriptexterno.js"></script>
+
   </body>
+  <script>
+    // Exibe os dados
+    document.getElementById("nome").innerText = sessionStorage.getItem("nome")
+    document.getElementById("cod_voo").innerText = sessionStorage.getItem("cod_voo")
+
+    document.getElementById("origem").innerText = sessionStorage.getItem("origem").split("-")[0]
+    document.getElementById("destino").innerText = sessionStorage.getItem("destino").split("-")[0]
+
+    var dataIdaErrada = sessionStorage.getItem("dataIda").split("-")
+    var dataIdaFormatada = `${dataIdaErrada[2]}/${dataIdaErrada[1]}`
+    document.getElementById("data").innerHTML = dataIdaFormatada
+
+    document.getElementById("hora").innerHTML = sessionStorage.getItem("origem").split("-")[1]
+    document.getElementById("tipo").innerHTML = sessionStorage.getItem("modo")
+  </script>
+  <script type="text/javascript" src="/js/cookie.js"></script>
+  <script type="text/javascript" src="/js/Scriptexterno.js"></script>
 </html>

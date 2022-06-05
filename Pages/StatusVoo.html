@@ -98,8 +98,6 @@
                 <div id="divider-section"></div>
             </div>
 
-            <h1>PUXAR DADO DE TUDO</h1>
-
             <br>
 
             <form class="container myform">
@@ -115,8 +113,8 @@
                     <br>
 
                     <div class="col-md">
-                        <label for="input-username" class="form-label font-subtitle-branco">Digite o código do voo</label>
-                        <input type="text" class="form-control input-passageiro" id="input-username"
+                        <label for="input-name" class="form-label font-subtitle-branco">Digite o código do voo</label>
+                        <input type="text" class="form-control input-passageiro" id="input-name"
                             placeholder="Digite aqui o código">
                     </div>
 
@@ -152,7 +150,7 @@
 
         </main>
 
-        <div class="container">
+        <div class="container footer">
             <footer class="row row-cols-5 py-5 my-5 border-top">
                 <div class="col">
                     <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
@@ -203,6 +201,11 @@
         </div>
 
     </body>
+    <script>
+      // Preenche campos com os dados
+      document.getElementById("input-name").value = sessionStorage.getItem("nome")
+      document.getElementById("inputdataVoltar").value = sessionStorage.getItem("dataIda")
+    </script>
     <script type="text/javascript" src="/js/cookie.js"></script>
     <script type="text/javascript" src="/js/Scriptexterno.js"></script>
 </html>

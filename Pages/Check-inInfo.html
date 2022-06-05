@@ -33,19 +33,15 @@
     <title>Check-in</title>
   </head>
 
-  <body class="container body main">
-
-    <br />
+  <body class="container body2 main2">
 
     <main class="container">
       <br />
 
       <div class="container" align="center">
-        <h4 class="font-title-preto">Check-in</h4>
+        <h4 class="font-title-branco">Check-in</h4>
         <div id="divider-section"></div>
       </div>
-
-      <h1>PUXAR DADO DE TUDO</h1>
 
       <br />
 
@@ -104,9 +100,9 @@
 
         <br>
 
-        <h6 class="font-subtitle-branco">Voo de Volta</h6>
+        <h6 class="font-subtitle-branco" id="l_voo_volta">Voo de Volta</h6>
 
-        <div class="row passageiro-info">
+        <div class="row passageiro-info" id="voo_volta">
           <div class="col">
             <h6 class="font-subtitle-azul">Voo</h6>
             <h6 class="font-text-preto"><span id="cod_voo_volta">G7 3421</span></h6>
@@ -189,10 +185,16 @@
     var dataVoltaFormatada = `${dataVoltaErrada[2]}/${dataVoltaErrada[1]}`
 
     document.getElementById("data_origem_ida").innerHTML = `${origem[0]} ${dataIdaFormatada} - ${origem[1]}`
-    document.getElementById("data_destino_ida").innerHTML = `${destino[0]} ${dataVoltaFormatada} - ${destino[1]}`
+    document.getElementById("data_destino_ida").innerHTML = `${destino[0]} ${dataIdaFormatada} - ${destino[1]}`
 
     document.getElementById("data_origem_volta").innerHTML = `${origem[0]} ${dataIdaFormatada} - ${origem[1]}`
     document.getElementById("data_destino_volta").innerHTML = `${destino[0]} ${dataVoltaFormatada} - ${destino[1]}`
+
+    // Não exibe o voo de volta se não for preciso
+    if (sessionStorage.getItem("esconder") == "1") {
+      document.getElementById("l_voo_volta").style.display = "none"
+      document.getElementById("voo_volta").style.display = "none"
+    }
   </script>
 
   <script type="text/javascript" src="/js/cookie.js"></script>

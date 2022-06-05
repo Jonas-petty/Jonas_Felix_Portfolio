@@ -33,13 +33,13 @@
     <title>Carrinho</title>
   </head>
 
-  <body class="container body main">
+  <body class="container body2 main2">
 
         <main class="container">
             <br>
 
             <div class="container" align="center">
-                <h4 class="font-title-preto">Carrinho de Compras</h4>
+                <h4 class="font-title-branco">Carrinho de Compras</h4>
                 <div id="divider-section"></div>
             </div>
 
@@ -49,8 +49,6 @@
                 <div align="center">
                     <br>
                     <h6 class="font-subtitle-branco">Confira o resumo detalhado da sua viagem</h6>
-
-                    <h1>PUXAR O DADO DE TUDO!</h1>
                 </div>
 
                 <br>
@@ -203,9 +201,9 @@
         var dataIdaFormatada = `${dataIdaErrada[2]}/${dataIdaErrada[1]}/${dataIdaErrada[0]}`
         document.getElementById("data_ida").innerHTML = dataIdaFormatada
 
-        var dataVoltaErrada = sessionStorage.getItem("dataVolta").split("-")
-        var dataVoltaFormatada = `${dataVoltaErrada[2]}/${dataVoltaErrada[1]}/${dataVoltaErrada[0]}`
-        document.getElementById("data_volta").innerHTML = dataVoltaFormatada
+        /*var dataVoltaErrada = sessionStorage.getItem("dataVolta").split("-")
+        var dataVoltaFormatada = `${dataVoltaErrada[2]}/${dataVoltaErrada[1]}/${dataVoltaErrada[0]}`*/
+        document.getElementById("data_volta").innerHTML = dataIdaFormatada
 
         document.getElementById("hora_ida").innerHTML = sessionStorage.getItem("origem").split("-")[1]
         document.getElementById("hora_volta").innerHTML = sessionStorage.getItem("destino").split("-")[1]
@@ -225,7 +223,7 @@
         document.getElementById("ori_des_2").innerHTML = `${ori} - ${des}`
 
         var preco = preco.split(" ")[1]
-        var preco_total = Number(preco.replace(".", "").replace(",", ".")) + sessionStorage.getItem("preco_bagagem")  * 90
+        var preco_total = Number(preco.replace(".", "").replace(",", ".")) + sessionStorage.getItem("preco_bagagem")  * 90 + 47.79
         document.getElementById("valor-total").innerHTML = preco_total
         
         document.addEventListener("DOMContentLoaded", get, false)
