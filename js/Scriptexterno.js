@@ -79,15 +79,15 @@ function verificaEstado() {
 // Data Atual no sistema
 
 function dataAtual() {
-	document.getElementById("dataAtual").innerHTML = data.toLocaleDateString()
+	document.getElementById("dataAtual").innerText = data.toLocaleDateString()
 }
 
 // Inicia o sistema
 
 function iniciadora() {
 	verificaEstado()
-	dataAtual()
-	dataMinima()
+	//dataAtual()
+	//dataMinima()
 }
 
 document.addEventListener("DOMContentLoaded", iniciadora, false)

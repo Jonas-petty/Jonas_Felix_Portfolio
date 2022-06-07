@@ -31,6 +31,7 @@
     />
 
     <title>Carrinho</title>
+    <link rel="icon" type="image/png" href="/Images/Airplane.png" />
   </head>
 
   <body class="container body2 main2">
@@ -56,11 +57,11 @@
 
                 <div class="row">
                     <div class="col-3" id="col-imgs-carrinho">
-                        <h6>Voo de ida</h6>
+                        <h6>Viagem</h6>
                         <img id="img-airplane" src="/Images/Airplane.png" alt="">
                     </div>
                     <div class="col">
-                        <h6 class="font-subtitle-azul-claro">Voo de Ida</h6>
+                        <h6 class="font-subtitle-azul-claro">Detalhes do Voo</h6>
                         <h6 class="font-text-branco"><span id="cod_voo">G31618</span></h6>
                         <h6 class="font-text-branco">Operado por <span id="companhia">GOL</span></h6>
                         <h6 class="font-text-branco">Duração: <span id="duracao">03:20</span></h6>
@@ -111,7 +112,7 @@
                         <div class="col" id="assento-info">
                             <h6 class="font-text-branco">Voo de Ida (<span id="ori_des_1">GRU - REC</span>)</h6>
                             <h6 class="font-text-branco"><span id="profile-name-assento"></span></h6>
-                            <h6 class="font-text-branco"><span id="assento">B1</span> - <span id="comp">GOL</span> + Conforto</h6>
+                            <h6 class="font-text-branco"><span id="assento">B1</span> - <span id="comp">GOL</span> - Assento Reclinável</h6>
                             <h6><a id="alterar-links" href="/Pages/SelecionarAssento.html">Alterar assento</a></h6>
                         </div>
                     </div>
@@ -157,8 +158,12 @@
 
                     <br>
 
-                    <div class="row" id="btn-voltar">
-                        <a href="/Pages/PersonalizarViagem.html" id="btn-links">Voltar</a>
+                    <div class="row" id="section-btns-comprar" align="middle">
+                        <div class="col">
+                            <div id="div-btn-voltar">
+                                <a id="btn-voltar" href="/Pages/PersonalizarViagem.html">Voltar</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -223,8 +228,17 @@
         document.getElementById("ori_des_2").innerHTML = `${ori} - ${des}`
 
         var preco = preco.split(" ")[1]
-        var preco_total = Number(preco.replace(".", "").replace(",", ".")) + sessionStorage.getItem("preco_bagagem")  * 90 + 47.79
-        document.getElementById("valor-total").innerHTML = preco_total
+
+        // valida o preco da bagagem
+        if (pre_bag.value === 0) {
+            var preco_total = Number(preco.replace(".", "").replace(",", ".")) + 47.79
+        } else {
+            var preco_total = Number(preco.replace(".", "").replace(",", ".")) + sessionStorage.getItem("preco_bagagem")  * 90 + 47.79
+        }
+        document.getElementById("valor-total").innerHTML = preco_total.toFixed(2)
+
+        
+        
         
         document.addEventListener("DOMContentLoaded", get, false)
     </script>

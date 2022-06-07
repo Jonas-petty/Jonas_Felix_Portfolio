@@ -19,6 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet" />
 
   <title>Perfil</title>
+  <link rel="icon" type="image/png" href="/Images/Airplane.png" />
 </head>
 
 <body class="container body main">
@@ -59,7 +60,7 @@
       </div>
       <div class="col-2">
         <div id="btn-login">
-          <a id="btn-link" href="/Pages/Login.html">Bem vindo <span id="logo-username"></span></a>
+          <a id="btn-link" href="/Pages/Perfil.html">Bem vindo <span id="logo-username"></span></a>
         </div>
       </div>
     </div>
@@ -91,10 +92,11 @@
             <img class="foto-perfil" src="/Images/person.png" alt="">
           </div>
           <div class="col-7 div-perfil">
-            <h6 class="font-subtitle-branco">Bem vindo, NOME DO USUÁRIO</h6>
+            <h6 class="font-subtitle-branco" id="nome">Bem vindo, NOME DO USUÁRIO</h6>
             <h6 class="font-text-branco"><i class="bi bi-envelope-fill perfil-icons"></i> EMAILDOUSUÁRIO@GMAIL.COM</h6>
           </div>
-          <div class="col div-perfil"><a class="bi bi-gear-fill perfil-icons-lg" title="Editar perfil de usuário" href="/Pages/Cadastro.html"></a>
+          <div class="col div-perfil"><a class="bi bi-gear-fill perfil-icons-lg" title="Editar perfil de usuário"
+              href="/Pages/Cadastro.html"></a>
           </div>
         </div>
         <div class="row div-descricao">
@@ -107,7 +109,7 @@
           <div class="row">
             <div class="col-4">
               <h6 class="font-subtitle-azul">Número do voo</h6>
-              <h6 class="font-text-preto  ">G3 1618</h6>
+              <h6 class="font-text-preto" id="cod_voo">G3 1618</h6>
             </div>
             <div class="col">
               <h6 class="font-subtitle-azul">Status</h6>
@@ -115,11 +117,11 @@
             </div>
             <div class="col">
               <h6 class="font-subtitle-azul">Data</h6>
-              <h6 class="font-text-preto ">Puxar dado</h6>
+              <h6 class="font-text-preto" id="data_voo">Puxar dado</h6>
             </div>
             <div class="col">
               <h6 class="font-subtitle-azul">Pagamento</h6>
-              <h6 class="font-text-preto  ">Cartão de crédito</h6>
+              <h6 class="font-text-preto">Cartão de crédito</h6>
             </div>
           </div>
         </div>
@@ -140,7 +142,7 @@
         <div class="row">
           <a class="col btn-link-atalhos" href="/Pages/Atendimento.html">
             <div class="container-detalhes2 div-btn-atalhos">
-              <h6 class="font-subtitle-branco">Atendimento ao Cliente</h6>
+              <h6 class="font-subtitle-branco">Atendimento</h6>
             </div>
           </a>
           <a class="col btn-link-atalhos" href="/Pages/Check-in.html">
@@ -148,40 +150,45 @@
               <h6 class="font-subtitle-branco">Check-in</h6>
             </div>
           </a>
-          
+
         </div>
       </div>
     </div>
-    
+
 
     <br>
 
   </main>
 
-  <div class="container">
+  <!-- Footer -->
+  <div class="container footer">
     <footer class="row row-cols-5 py-5 my-5 border-top">
       <div class="col">
         <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
           <h3 id="nav-footer">RiseUp!</h3>
         </a>
-        <p id="nav-footer">© 2021</p>
+        <p id="nav-footer">© 2022</p>
       </div>
 
-      <div class="col">
-
-      </div>
+      <div class="col"></div>
 
       <div class="col">
         <h5 id="nav-footer2">Menu</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="/index.html" id="footer-links" class="nav-link p-0">Home</a>
+          <li class="nav-item mb-2">
+            <a href="/index.html" id="footer-links" class="nav-link p-0">Home</a>
           </li>
-          <li class="nav-item mb-2"><a href="/Pages/Acessibilidade.html" id="footer-links"
-              class="nav-link p-0">Acessibilidade</a></li>
-          <li class="nav-item mb-2"><a href="/Pages/ComprarPassagem.html" id="footer-links" class="nav-link p-0">Comprar
-              passagem</a></li>
-          <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Check-in</a></li>
-          <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Status de voo</a>
+          <li class="nav-item mb-2">
+            <a href="/Pages/Acessibilidade.html" id="footer-links" class="nav-link p-0">Acessibilidade</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="/Pages/ComprarPassagem.html" id="footer-links" class="nav-link p-0">Comprar passagem</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="/Pages/Check-in.html" id="footer-links" class="nav-link p-0">Check-in</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="/Pages/StatusVoo.html" id="footer-links" class="nav-link p-0">Status de voo</a>
           </li>
         </ul>
       </div>
@@ -189,26 +196,46 @@
       <div class="col">
         <h5 id="nav-footer2">Contato</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Atendimento</a>
+          <li class="nav-item mb-2">
+            <a href="/Pages/Atendimento.html" id="footer-links" class="nav-link p-0">Atendimento</a>
           </li>
-          <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Telefone</a></li>
-          <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Email</a></li>
-          <li class="nav-item mb-2"><a href="https://www.instagram.com/mamisbrasil/" target="_blank" id="footer-links"
-              class="nav-link p-0">Instagram</a></li>
+          <li class="nav-item mb-2">
+            <a href="/Pages/Atendimento.html" id="footer-links" class="nav-link p-0">Telefone</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="/Pages/Atendimento.html" id="footer-links" class="nav-link p-0">Email</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" target="_blank" id="footer-links" class="nav-link p-0">Instagram</a>
+          </li>
         </ul>
       </div>
 
       <div class="col">
         <h5 id="nav-footer2">Extras</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Sobre nós</a></li>
-          <li class="nav-item mb-2"><a href="#" id="footer-links" class="nav-link p-0">Blog</a></li>
+          <li class="nav-item mb-2">
+            <a href="#" id="footer-links" class="nav-link p-0">Sobre nós</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" id="footer-links" class="nav-link p-0">Blog</a>
+          </li>
         </ul>
       </div>
     </footer>
   </div>
-  <script type="text/javascript" src="/js/cookie.js"></script>
-  <script type="text/javascript" src="/js/Scriptexterno.js"></script>
-</body>
 
+</body>
+<script>
+  // Exibe os dados 
+  document.getElementById("logo-username").innerText = sessionStorage.getItem("nome").split(" ")[0]
+  document.getElementById("nome").innerText = `Bem vindo, ${sessionStorage.getItem("nome")}`
+  document.getElementById("cod_voo").innerText = sessionStorage.getItem("cod_voo")
+  var dataIdaErrada = sessionStorage.getItem("dataIda").split("-")
+  var dataIdaFormatada = `${dataIdaErrada[2]}/${dataIdaErrada[1]}/${dataIdaErrada[0]}`
+  document.getElementById("data_voo").innerHTML = dataIdaFormatada
+</script>
+
+<script type="text/javascript" src="/js/cookie.js"></script>
+<script type="text/javascript" src="/js/Scriptexterno.js"></script>
 </html>

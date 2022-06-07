@@ -19,6 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet" />
 
   <title>Acessibilidade</title>
+  <link rel="icon" type="image/png" href="/Images/Airplane.png" />
 </head>
 
 <body class="container body main">
@@ -112,24 +113,7 @@
         <div class="col-1" id="div-icon">
           <i href="#"><img class="baixavisao" src="/Images/Baixavisao.png" alt="" /></i>
         </div>
-
         <br />
-
-        <div class="container col">
-          <a href="">
-
-          </a>
-          <div class="btn-container">
-            <button name="increase-font" id="increase-font" class="aumentar-fonte"
-              title="Aumentar globalmente o tamanho das fonte">
-              A +
-            </button>
-            <button name="decrease-font" id="decrease-font" class="diminuir-fonte"
-              title="Diminuir globalmente o tamanho das fontes">
-              A -
-            </button>
-          </div>
-        </div>
       </div>
 
       <div class="col-8">
@@ -140,6 +124,20 @@
         </h6>
       </div>
       <div class="col"></div>
+    </div>
+
+    <div class="container btn-controle-fonts">
+      </a>
+      <div class="btn-container">
+        <button name="increase-font" id="increase-font" class="aumentar-fonte"
+          title="Aumentar globalmente o tamanho das fontes">
+          A +
+        </button>
+        <button name="decrease-font" id="decrease-font" class="diminuir-fonte"
+          title="Diminuir globalmente o tamanho das fontes">
+          A -
+        </button>
+      </div>
     </div>
 
     <br />
@@ -168,27 +166,26 @@
         <div class="col-1" id="div-icon">
           <i href="#"><img class="fotossensivel" src="/Images/Rainbow.png" alt="" /></i>
         </div>
-
         <br />
-
-        <div class="container col">
-          <button name="change-color" id="change-color" class="contraste" title="Ativar o contraste do site"
-            onclick="changeColor()">
-            Contraste
-          </button>
-        </div>
       </div>
 
       <div class="col-8">
         <br />
         <h6 class="font-text-preto necessidade-desc" align="justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
-          egestas odio sapien dis massa massa massa.Lorem ipsum dolor sit
-          amet, consectetur adipiscing elit. Euismod egestas odio sapien dis
-          massa massa massa.
+          Para pessoas com fotossensibilidade visual ou com certo nível de daltonismo temos ferramentas de
+          acessibilidade de contraste de cores, deixando o tema mais escuro ou mais claro, com o botão contraste logo
+          abaixo.
         </h6>
       </div>
       <div class="col"></div>
+    </div>
+
+    <!-- Contraste -->
+    <div class="container btn-contraste">
+      <button name="change-color" id="change-color" class="contraste" title="Ativar o contraste do site"
+        onclick="changeColor()">
+        Contraste
+      </button>
     </div>
 
     <br />
@@ -196,23 +193,30 @@
     <!-- Cegueira -->
     <div class="container row div-necessidades">
       <div class="col title-necessidade" align="center">
-        <h6 class="font-subtitle-azul">Cegueira</h6>
+        <h6 class="font-subtitle-azul">Leitor de tela</h6>
 
         <div class="col-1" id="div-icon">
           <i href="#"><img class="cegueira" src="/Images/Cegueira.png" alt="" /></i>
         </div>
+
+        <br />
       </div>
 
       <div class="col-8">
         <br />
         <h6 class="font-text-preto necessidade-desc" align="justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Euismod
-          egestas odio sapien dis massa massa massa.Lorem ipsum dolor sit
-          amet, consectetur adipiscing elit. Euismod egestas odio sapien dis
-          massa massa massa.
+          Para pessoas que não conseguem enxergar temos um site organizado de maneira em que seja possivel navegar por
+          todos os sites apenas com a utilização de um software de leitor de tela, recomendamos o uso do NVDA(NonVisual
+          Desktop Access) encontrado no link a seguir.
         </h6>
       </div>
       <div class="col"></div>
+    </div>
+
+    <div class="container btn-nvda">
+      <div id="div-nvda" align="center">
+        <a id="nvda-link" href="https://www.nvaccess.org/download/" target="_blank">NVDA</a>
+      </div>
     </div>
 
     <br />
@@ -225,7 +229,7 @@
           <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
             <h3 id="nav-footer">RiseUp!</h3>
           </a>
-          <p id="nav-footer">© 2021</p>
+          <p id="nav-footer">© 2022</p>
         </div>
 
         <div class="col"></div>
@@ -243,10 +247,10 @@
               <a href="/Pages/ComprarPassagem.html" id="footer-links" class="nav-link p-0">Comprar passagem</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" id="footer-links" class="nav-link p-0">Check-in</a>
+              <a href="/Pages/Check-in.html" id="footer-links" class="nav-link p-0">Check-in</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" id="footer-links" class="nav-link p-0">Status de voo</a>
+              <a href="/Pages/StatusVoo.html" id="footer-links" class="nav-link p-0">Status de voo</a>
             </li>
           </ul>
         </div>
@@ -255,17 +259,16 @@
           <h5 id="nav-footer2">Contato</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
-              <a href="#" id="footer-links" class="nav-link p-0">Atendimento</a>
+              <a href="/Pages/Atendimento.html" id="footer-links" class="nav-link p-0">Atendimento</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" id="footer-links" class="nav-link p-0">Telefone</a>
+              <a href="/Pages/Atendimento.html" id="footer-links" class="nav-link p-0">Telefone</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" id="footer-links" class="nav-link p-0">Email</a>
+              <a href="/Pages/Atendimento.html" id="footer-links" class="nav-link p-0">Email</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="https://www.instagram.com/mamisbrasil/" target="_blank" id="footer-links"
-                class="nav-link p-0">Instagram</a>
+              <a href="#" target="_blank" id="footer-links" class="nav-link p-0">Instagram</a>
             </li>
           </ul>
         </div>

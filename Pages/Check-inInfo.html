@@ -31,6 +31,7 @@
     />
 
     <title>Check-in</title>
+    <link rel="icon" type="image/png" href="/Images/Airplane.png" />
   </head>
 
   <body class="container body2 main2">
@@ -66,7 +67,7 @@
           </div>
           <div class="col">
             <h6 class="font-subtitle-azul">Identificação</h6>
-            <h6 class="font-text-preto">CPF</h6>
+            <h6 class="font-text-preto" id="num_cpf">CPF</h6>
           </div>
           
         </div>
@@ -98,7 +99,7 @@
           </div>
         </div>
 
-        <br>
+        <!-- <br>
 
         <h6 class="font-subtitle-branco" id="l_voo_volta">Voo de Volta</h6>
 
@@ -123,7 +124,7 @@
             <h6 class="font-subtitle-azul">Assento:</h6>
             <h6 class="font-text-preto"><span id="assento_volta">D12</span></h6>
           </div>
-        </div>
+        </div> -->
 
         <br>
 
@@ -132,7 +133,7 @@
         <div class="row passageiro-info">
           <div class="col">
             <h6 class="font-subtitle-azul">Descrição</h6>
-            <h6 class="font-text-preto">Conteúdo das Necessidades</h6>
+            <h6 class="font-text-preto" id="nessecidades">Conteúdo das Necessidades</h6>
         </div>
 
         <br>
@@ -166,14 +167,16 @@
     document.getElementById("nome_tit").innerHTML = sessionStorage.getItem("nome")
     document.getElementById("nome").innerHTML = sessionStorage.getItem("nome")
 
+    document.getElementById("num_cpf").innerText = sessionStorage.getItem("num_cpf")
+
     document.getElementById("cod_voo_ida").innerHTML = sessionStorage.getItem("cod_voo")
-    document.getElementById("cod_voo_volta").innerHTML = sessionStorage.getItem("cod_voo")
+    //document.getElementById("cod_voo_volta").innerHTML = sessionStorage.getItem("cod_voo")
 
     document.getElementById("tipo_ida").innerHTML = sessionStorage.getItem("tipo_voo")
-    document.getElementById("tipo_volta").innerHTML = sessionStorage.getItem("tipo_voo")
+    //document.getElementById("tipo_volta").innerHTML = sessionStorage.getItem("tipo_voo")
 
     document.getElementById("assento_ida").innerText = sessionStorage.getItem("assento")
-    document.getElementById("assento_volta").innerHTML = sessionStorage.getItem("assento")
+    //document.getElementById("assento_volta").innerHTML = sessionStorage.getItem("assento")
 
     var origem = sessionStorage.getItem("origem").split("-")
     var destino = sessionStorage.getItem("destino").split("-")
@@ -181,20 +184,32 @@
     var dataIdaErrada = sessionStorage.getItem("dataIda").split("-")
     var dataIdaFormatada = `${dataIdaErrada[2]}/${dataIdaErrada[1]}`
 
+    /*
     var dataVoltaErrada = sessionStorage.getItem("dataVolta").split("-")
     var dataVoltaFormatada = `${dataVoltaErrada[2]}/${dataVoltaErrada[1]}`
-
+    */
     document.getElementById("data_origem_ida").innerHTML = `${origem[0]} ${dataIdaFormatada} - ${origem[1]}`
     document.getElementById("data_destino_ida").innerHTML = `${destino[0]} ${dataIdaFormatada} - ${destino[1]}`
 
-    document.getElementById("data_origem_volta").innerHTML = `${origem[0]} ${dataIdaFormatada} - ${origem[1]}`
-    document.getElementById("data_destino_volta").innerHTML = `${destino[0]} ${dataVoltaFormatada} - ${destino[1]}`
+    //document.getElementById("data_origem_volta").innerHTML = `${origem[0]} ${dataIdaFormatada} - ${origem[1]}`
+    //document.getElementById("data_destino_volta").innerHTML = `${destino[0]} ${dataVoltaFormatada} - ${destino[1]}`
+
+    // Exibe as necessidades
+    var area_necessidade = document.getElementById("nessecidades")
+    var necessidades = sessionStorage.getItem("lista_ness").split(".")
+    var text = ""
+    for (var i = 0; i < necessidades.length -1; i++) {
+      text +=  `<li>${necessidades[i]}.</li> `.replace(",", "")
+    }
+    area_necessidade.innerHTML = text
 
     // Não exibe o voo de volta se não for preciso
+    /*
     if (sessionStorage.getItem("esconder") == "1") {
       document.getElementById("l_voo_volta").style.display = "none"
       document.getElementById("voo_volta").style.display = "none"
     }
+    */
   </script>
 
   <script type="text/javascript" src="/js/cookie.js"></script>
