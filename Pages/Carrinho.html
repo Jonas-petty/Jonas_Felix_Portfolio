@@ -119,13 +119,13 @@
 
                     <div class="row">
                         <div class="col-3" id="col-imgs-carrinho">
-                            <h6>Bagagem</h6>
+                            <h6>Personalização</h6>
                             <img id="imgs-personalizar" src="/Images/Luggage.png" alt="">
                         </div>
                         <div class="col" id="bagagem-info">
-                            <h6 class="font-text-branco">Voo de Ida (<span id="ori_des_2">GRU - REC</span>)</h6>
+                            <h6 class="font-text-branco"> Itens selecionados :</h6>
                             <h6 class="font-text-branco"><span id="profile-name_bagagem"></span></h6>
-                            <h6 class="font-subtitle-azul-claro">R$ <span id="tot_bagagem">* Nenhuma bagagem adquirida</span></h6>
+                            <h6 class="font-subtitle-azul-claro"><span id="tot_bagagem">* Nenhuma bagagem adquirida</span></h6>
                             <h6 class="font-subtitle-azul-claro" id="pet"></h6>
                             <h6 class="font-subtitle-azul-claro" id="acomp"></h6>
                             <h6><a id="alterar-links" href="/Pages/PersonalizarViagem.html">Adquirir bagagem</a></h6>
@@ -219,7 +219,7 @@
         document.getElementById("preco").innerHTML = preco
 
         var pre_bag = sessionStorage.getItem("preco_bagagem")  * 90
-        document.getElementById("tot_bagagem").innerHTML = `${pre_bag},00`
+        document.getElementById("tot_bagagem").innerHTML = `Preço da bagagem: R$ ${pre_bag},00`
 
         document.getElementById("pet").innerText = sessionStorage.getItem("pet_voo")
         document.getElementById("acomp").innerText = sessionStorage.getItem("acomp_voo")
@@ -232,7 +232,7 @@
         var ori = sessionStorage.getItem("origem_completo").split(" ")[0]
         var des = sessionStorage.getItem("destino_completo").split(" ")[0]
         document.getElementById("ori_des_1").innerHTML = `${ori} - ${des}`
-        document.getElementById("ori_des_2").innerHTML = `${ori} - ${des}`
+        //document.getElementById("ori_des_2").innerHTML = `${ori} - ${des}`
 
         var preco = preco.split(" ")[1]
 
