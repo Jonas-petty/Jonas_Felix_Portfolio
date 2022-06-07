@@ -84,7 +84,7 @@
                         <h6 class="font-text-branco">Viaje com o seu
                             companheiro pertinho de você, aproveite agora para
                             garantir o espaço do pet na cabine.</h6>
-                        <select id="inputDocumemento" class="form-select input-op-personalizar">
+                        <select id="pet" class="form-select input-op-personalizar inputDocumento">
                             <option selected>Contratar Dog&Cat Cabine</option>
                             <option>Cachorro</option>
                             <option>Gato</option>
@@ -106,7 +106,7 @@
                         <h6 class="font-text-branco">Adquira o
                             serviço Voe Junto e acompanhe cada passo da viagem
                             de alguém que requer atenção especial à distância.</h6>
-                        <select id="inputDocumemento" class="form-select input-op-personalizar">
+                        <select id="acomp" class="form-select input-op-personalizar inputDocumento">
                             <option selected>Adiquirir Voe Junto</option>
                             <option>Acompanhante</option>
                             <option>Cão-guia</option>
@@ -127,8 +127,9 @@
                     </div>
                 </div>
                 <div class="col-3">
+                    <!--/Pages/Carrinho.html-->
                     <div id="div-btn-buscar">
-                        <a class="font-text-branco" id="btn-buscar" href="/Pages/Carrinho.html">Ir para o Carrinho</a>
+                        <a class="font-text-branco" id="btn-buscar" href="/Pages/Carrinho.html" onclick="recolheValores()">Ir para o Carrinho</a>
                     </div>
                 </div>
                 <div class="col"></div>
@@ -162,6 +163,18 @@
     }
 
     document.getElementById("tot_bagagem").onclick = onClick
+
+    // Recolhe pet e acompanhante
+    function recolheValores() {
+        var sel1 = document.getElementById("pet")
+        var sel2 = document.getElementById("acomp")
+
+        sessionStorage.setItem("pet_voo", sel1.options[sel1.selectedIndex].text)
+        sessionStorage.setItem("acomp_voo", sel2.options[sel2.selectedIndex].text)
+        console.log(sel1.options[sel1.selectedIndex].text)
+        console.log(sel2.options[sel2.selectedIndex].text)
+    }
+
 
     document.addEventListener("DOMContentLoaded", get, false)
 </script>

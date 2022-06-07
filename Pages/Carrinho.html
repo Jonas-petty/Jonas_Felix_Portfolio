@@ -126,6 +126,8 @@
                             <h6 class="font-text-branco">Voo de Ida (<span id="ori_des_2">GRU - REC</span>)</h6>
                             <h6 class="font-text-branco"><span id="profile-name_bagagem"></span></h6>
                             <h6 class="font-subtitle-azul-claro">R$ <span id="tot_bagagem">* Nenhuma bagagem adquirida</span></h6>
+                            <h6 class="font-subtitle-azul-claro" id="pet"></h6>
+                            <h6 class="font-subtitle-azul-claro" id="acomp"></h6>
                             <h6><a id="alterar-links" href="/Pages/PersonalizarViagem.html">Adquirir bagagem</a></h6>
                         </div>
                     </div>
@@ -218,6 +220,11 @@
 
         var pre_bag = sessionStorage.getItem("preco_bagagem")  * 90
         document.getElementById("tot_bagagem").innerHTML = `${pre_bag},00`
+
+        document.getElementById("pet").innerText = sessionStorage.getItem("pet_voo")
+        document.getElementById("acomp").innerText = sessionStorage.getItem("acomp_voo")
+        console.log(sessionStorage.getItem("pet_voo"))
+        console.log(sessionStorage.getItem("acomp_voo"))
 
         document.getElementById("assento").innerHTML = sessionStorage.getItem("assento")
         document.getElementById("comp").innerHTML = sessionStorage.getItem("comp_aerea")
