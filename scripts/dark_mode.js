@@ -13,11 +13,13 @@ function alter_mode() {
 
 function turn_dark() {
     document.body.id = "dark_body"
+    document.getElementById('aside').id = "dark_aside"
     icon.src = "images/light_sun_icon.png"
     
 }
 
 function turn_light() {
     document.body.id = ""
+    document.getElementById('dark_aside').id = "aside"
     icon.src = "images/light_moon_icon.png"
 }
