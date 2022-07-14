@@ -111,3 +111,18 @@ main {
     line-height: 30px;
     text-align: justify;
 }
+
+footer {
+    font-size: small;
+    text-align: center;
+    background-color: #000;
+    color: var(--light);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 5px 0;
+}
+
+footer > a {
+    color: var(--light);
+}
