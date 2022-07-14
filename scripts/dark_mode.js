@@ -14,6 +14,7 @@ function alter_mode() {
 function turn_dark() {
     document.body.id = "dark_body"
     document.getElementById('aside').id = "dark_aside"
+    document.getElementById('contacts').id = "dark_contacts"
     icon.src = "images/light_sun_icon.png"
     
 }
@@ -21,5 +22,6 @@ function turn_dark() {
 function turn_light() {
     document.body.id = ""
     document.getElementById('dark_aside').id = "aside"
+    document.getElementById('dark_contacts').id = "contacts"
     icon.src = "images/light_moon_icon.png"
 }

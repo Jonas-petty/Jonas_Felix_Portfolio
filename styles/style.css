@@ -35,7 +35,7 @@ nav {
     align-items: center;
 }
 
-nav a {
+nav > a {
     color: var(--light);
     text-decoration: none;
     transition: 0.2s;
@@ -82,15 +82,17 @@ main {
     margin: 10px;
     text-align: center;
 }
-/*
+
 #contacts {
-
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
 }
-
+/*
 #contacts > img {
 
 }
-*/
+*/  
 #contacts > a {
     text-decoration: none;
     font-weight: bold;
