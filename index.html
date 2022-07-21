@@ -5,43 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Início | Jonas Felix</title>
+    <title>Jonas Felix</title>
 </head>
 <body>
     <header>
-        
         <nav>
-            <a href="index.html" id="my_name">Jonas Felix</a>
-            <a href="#" title="Projetos">Projetos</a>
-            <a href="#" title="Sobre">Sobre</a>
-            <button id="alternate_mode"><img src="images/light_moon_icon.png" alt="Modo noturno" title="Modo noturno" id="icon_mode" onclick="alter_mode()"></button>
+            <ul>
+                <li class="nav_item" id="name_item"><a href="index.html" title="Jonas Felix">Jonas Felix</a></li>
+                <li class="nav_item"><a href="#" title="Sobre">Sobre</a></li>
+                <li class="nav_item"><a href="#" title="Blog">Blog</a></li>
+                <li class="nav_item"><a href="#" title="Projetos">Projetos</a></li>
+                <li class="nav_item"><button onclick="alter_mode()"><img src="images/light_moon_icon.png" alt="Dark Mode" title="Dark Mode" id="icon_mode"></button></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <aside id="aside">
-            <img src="https://avatars.githubusercontent.com/u/82126274?v=4" alt="Imagem de Jonas Felix" title="Imagem de Jonas Felix" id="perfil_image">
-            <div id="contacts">
-                <a href="https://github.com/Jonas-petty"><img src="images/github.png" alt="GitHub">GitHub</a>
-                <a href="#"><img src="images/linkedin-logo.png" alt="LinkedIn">LinkedIn</a>
-                <a href="#"><img src="#" alt="Lattes"></a>
+        <aside id="perfil">
+            <img src="https://avatars.githubusercontent.com/u/82126274?v=4" alt="Imagem de Jonas" title="Jonas Felix">
+            <div id="social">
+                <ul>
+                    <li><a href="#"><img src="images/github.png" alt="GitHub">GitHub</a></li>
+                    <li><a href="#"><img src="images/linkedin-logo.png" alt="LinkedIn">LinkedIn</a></li>
+                    <li><a href="#"><img src="#" alt="Lattes">Lattes</a></li>
+                </ul>
             </div>
         </aside>
-
-        <article id="article">
-            <h1>Olá, meu nome é Jonas!</h1>
-            <div class="texto_longo">
-                <p>Eu sou estudante de Análise e Desenvolvimento de Sistemas no IFPE Campus Paulista, tenho 18 anos e estou me preparando para me tornar um desenvolvedor Full-Stack.
-                </p>
-            </div>
-            <h2>Projetos extracurriculares.</h2>
-            <div class="texto_longo">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rem deserunt obcaecati aliquam, expedita, nulla omnis eos ducimus odit placeat asperiores earum reprehenderit repellendus atque fugiat illo ratione neque nostrum?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fugiat suscipit quis culpa quia quos nihil, eius sed molestias incidunt debitis ab quidem est non doloremque! Error exercitationem vero quod.</p>
-            </div>
-        </article>
+        <section>
+            <h1>Site Pessoal</h1>
+            <p class="paragraph">
+                Pretendo usar esse website como portfolio pessoal além de arquivar projetos relevantes e eventos em que eu venha a participar.
+            </p>
+        </section>
     </main>
     <footer>
-        Desenvolvido por <a href="https://github.com/Jonas-petty">@Jonas Felix</a>
+
     </footer>
 </body>
 <script src="scripts/dark_mode.js"></script>

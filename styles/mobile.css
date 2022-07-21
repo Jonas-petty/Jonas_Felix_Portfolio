@@ -5,10 +5,11 @@
         flex-direction: column;
     }
 
-    #perfil_image {
-        max-width: 50%;
-        height: auto;
-        border: 2px solid var(--darker-light);
-        border-radius: 0%;
+    #aside {
+        flex: 10%;
+    }
+
+    #article {
+        flex-direction: 80%;
     }
 }

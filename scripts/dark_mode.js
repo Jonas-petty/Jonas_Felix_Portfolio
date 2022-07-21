@@ -13,15 +13,15 @@ function alter_mode() {
 
 function turn_dark() {
     document.body.id = "dark_body"
-    document.getElementById('aside').id = "dark_aside"
-    document.getElementById('contacts').id = "dark_contacts"
+    document.getElementById('perfil').id = "dark_perfil"
+    document.getElementById('social').id = "dark_social"
     icon.src = "images/light_sun_icon.png"
     
 }
 
 function turn_light() {
     document.body.id = ""
-    document.getElementById('dark_aside').id = "aside"
-    document.getElementById('dark_contacts').id = "contacts"
+    document.getElementById('dark_perfil').id = "perfil"
+    document.getElementById('dark_social').id = "social"
     icon.src = "images/light_moon_icon.png"
 }
