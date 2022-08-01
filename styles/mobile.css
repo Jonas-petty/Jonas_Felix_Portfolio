@@ -1,15 +1,1 @@
 @import url(variables.css);
-
-@media screen and (max-width: 600px) {
-    main {
-        flex-direction: column;
-    }
-
-    #aside {
-        flex: 10%;
-    }
-
-    #article {
-        flex-direction: 80%;
-    }
-}
