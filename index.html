@@ -12,8 +12,9 @@
         <nav>
             <ul>
                 <li class="nav_item" id="name_item"><a href="index.html" title="Jonas Felix"><h1>Jonas Felix</h1></a></li>
-                <li class="nav_item"><a href="#about" title="Sobre">Sobre</a></li>
+                <li class="nav_item"><a href="#about" title="Sobre" id="alternate">Sobre</a></li>
                 <li class="nav_item"><a href="#work" title="Projetos">Projetos</a></li>
+                <li class="nav_item"><a href="#contacts" title="Contatos">Contatos</a></li>
                 <li class="nav_item"><button onclick="alter_mode()"><img src="images/light_moon_icon.png" alt="Dark Mode" title="Dark Mode" id="icon_mode"></button></li>
             </ul>
         </nav>
@@ -25,11 +26,22 @@
         </section>
         <section id="work">
             <h2>Alguns dos meus Projetos</h2>
+            <div id="projects_grid"></div>
         </section>
-        <footer>
+        <section id="contacts">
+            <h2>Entre em contato!</h2>
+            <p>Vamos colaborar!</p>
+            <div id="contact_links">
+                <a href="https://github.com/Jonas-petty" target="_blank"><p>GitHub</p></a>
+                <a href="https://www.linkedin.com/in/jonas-felix-souza/" target="_blank"><p>LinkedIn</p></a>
+                <a href="mailto:jonasfelixdesouza21@gmail.com" target="_blank"><p>Mande um Email</p></a>
+            </div>
+        </section>
     </main>
-
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/Jonas-petty" target="_blank">@Jonas-Petty</a></p>
     </footer>
 </body>
 <script src="scripts/dark_mode.js"></script>
+<script src="scripts/projects_request.js"></script>
 </html>

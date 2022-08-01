@@ -1,6 +1,13 @@
 @import url(variables.css);
 
-#dark_body {
+#dark_about {
+    background: linear-gradient(90deg, var(--dark), var(--dark));
     color: var(--light);
-    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    transition: 1s;
 }

@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,6 +20,8 @@ header {
     top: 0;
     background-color: var(--blue);
     padding: 10px 0;
+    box-shadow: 0 10px 20px var(--shadow);
+    z-index: 2;
 }
 
 #name_item {
@@ -69,26 +72,108 @@ p {
 }
 
 #about {
+    background: linear-gradient(90deg, var(--light), var(--darker-light));
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
+    transition: 1s;
 }
 
 #work {
     background-color: var(--blue);
-    padding: 20px 0;
+    padding: 20px 10px;
 }
 
 #work > h2 {
     font-size: 2.5rem;
     color: var(--light);
     max-width: 600px;
-    margin: auto;
+    margin: 50px auto;
     padding-bottom: 10px;
     border-bottom: 2px solid var(--light);
 }
 
+#projects_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 4rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+#projects_grid > a {
+    background: linear-gradient(90deg, var(--light), var(--darker-light));
+    text-decoration: none;
+    padding: 20px;
+    color: var(--dark);
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+#projects_grid > a:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.316);
+}
+
+.lang {
+    font-weight: bolder;
+}
+
+.name {
+    font-weight: 500;
+}
+
+.desc {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+#contacts {
+    background-color: var(--dark);
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+}
+
+#contact_links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+#contact_links > a {  
+    text-decoration: none;
+    padding: 10px;
+}
+
+#contact_links > a > p {
+    font-weight: 500;
+    color: var(--light);
+    transition: 0.2s;
+}
+
+#contact_links > a > p:hover {
+    transform: scale(1.09);
+}
+
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    border-top: 3px solid var(--blue);
+}

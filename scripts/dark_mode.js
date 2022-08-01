@@ -1,5 +1,10 @@
+// Alternate the website mode, light or dark
+
 let mode = "light"
 let icon = document.getElementById('icon_mode')
+
+let about = document.getElementById('about')
+let about_link = document.getElementById('alternate')
 
 function alter_mode() {
     if (mode == "light") {
@@ -12,12 +17,14 @@ function alter_mode() {
 }
 
 function turn_dark() {
-    document.body.id = "dark_body"
+    about_link.href = '#dark_about'
+    about.id = 'dark_about'
     icon.src = "images/light_sun_icon.png"
     
 }
 
 function turn_light() {
-    document.body.id = ""
+    about_link.href = '#about'
+    about.id = 'about'
     icon.src = "images/light_moon_icon.png"
 }
