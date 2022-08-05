@@ -9,16 +9,16 @@ request.send()
 
 request.onload = function() {
     var projectsResponse = request.response
-    showProjects(projectsResponse)
+    showSomeProjects(projectsResponse)
 }
 
 
-function showProjects(jsonObject) {
+function showSomeProjects(jsonObject) {
     var projects = jsonObject
 
     var projectsGrid = document.getElementById('projects_grid')
     
-    for (var i = 0; i < projects.length; i++) {
+    for (var i = 0; i <= 6; i++) {
         if (projects[i]['name'] != 'Jonas-petty') {
             var myA = document.createElement('a')
             myA.href = projects[i]['html_url']
@@ -28,7 +28,7 @@ function showProjects(jsonObject) {
             myP1.textContent = `${projects[i]['language']}`
     
             var myP2 = document.createElement('p')
-            myP2.textContent = `${projects[i]['name'].replace('_', ' ')}`
+            myP2.textContent = `${projects[i]['name'].replace(/_/g, ' ')}`
 
             var myP3 = document.createElement('p')
             myP3.textContent = `${projects[i]['description']}`

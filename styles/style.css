@@ -1,6 +1,6 @@
 @import url(variables.css);
 @import url(dark_mode.css);
-@import url(mobile.css);
+@import url(button_a.css);
 
 * {
     margin: 0;
@@ -85,6 +85,7 @@ p {
 #work {
     background-color: var(--blue);
     padding: 20px 10px;
+    text-align: center;
 }
 
 #work > h2 {
@@ -99,7 +100,7 @@ p {
 #projects_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 4rem;
+    gap: 3rem;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -115,7 +116,7 @@ p {
 }
 
 #projects_grid > a:hover {
-    transform: scale(1.03);
+    transform: scale(0.98);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.316);
 }
 
