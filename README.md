@@ -4,8 +4,9 @@
 A repository to host my personal website while it is under development.  
 The idea is to keep adding more and more things to it as time passes by.  
 
-## 🛠️ Stack used... for now:
+["Click here"](https://jonas-petty.github.io/index.html) to visit the WebSite
 
+## 🛠️ Stack used... for now:
 
 <img src="https://logospng.org/download/css-3/logo-css-3-2048.png" alt="CSS" width="70" title="CSS">
 
