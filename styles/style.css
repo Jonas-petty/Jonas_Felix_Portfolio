@@ -1,6 +1,7 @@
 @import url(variables.css);
 @import url(dark_mode.css);
 @import url(button_a.css);
+@import url(project_card.css);
 
 * {
     margin: 0;
@@ -97,41 +98,6 @@ p {
     border-bottom: 2px solid var(--light);
 }
 
-#projects_grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 3rem;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-#projects_grid > a {
-    background: linear-gradient(90deg, var(--light), var(--darker-light));
-    text-decoration: none;
-    padding: 20px;
-    color: var(--dark);
-    border-radius: 5px;
-    transition: transform 0.2s;
-}
-
-#projects_grid > a:hover {
-    transform: scale(0.98);
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.316);
-}
-
-.lang {
-    font-weight: bolder;
-}
-
-.name {
-    font-weight: 500;
-}
-
-.desc {
-    margin-top: 10px;
-    font-size: 1.2rem;
-}
 
 #contacts {
     background-color: var(--dark);

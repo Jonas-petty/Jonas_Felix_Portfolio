@@ -1,16 +1,19 @@
-// Requests the public projects on my GitHub
+/* Requests the public projects on my GitHub */
+
+// Call the functions when the page is loaded
 window.onload = function() {
     var pageName = getPageName();
     var projectsJson = requestProjects(pageName);
 }
 
+// Get the name of the loaded page
 function getPageName() {
     var path = window.location.pathname
     var page = path.substring(path.lastIndexOf('/') + 1)
     return page
 }
 
-
+// Makes the request to the GitHub API
 function requestProjects(PageName) {
     const requestURL = "https://api.github.com/users/Jonas-petty/repos"
 
@@ -24,13 +27,14 @@ function requestProjects(PageName) {
         var projectsResponse = request.response
         console.log(projectsResponse, PageName)
         if (PageName == 'index.html') {
-            showProjects(projectsResponse, 6)
+            showProjects(projectsResponse, 6) // show just 6 projects on the index page
         } else if (PageName == 'projects.html') {
-            //showProjects(projectsResponse)
+            showProjects(projectsResponse) // show every project on the projects page
         }
     }
 }
 
+// Shows the results on the page
 function showProjects(jsonObject, nProjects) {
     var projects = jsonObject
 
