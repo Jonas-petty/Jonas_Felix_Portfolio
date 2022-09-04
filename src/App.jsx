@@ -12,7 +12,7 @@ export default function App() {
             name: repository.name,
             language: repository.language,
             description: repository.description,
-            url: repository.url
+            url: repository.html_url
         })))
     }
 
