@@ -8,12 +8,10 @@ This project showcases some of my skills, and projects as a frontend/backend dev
 
 ## 📸 Preview
 
-![Portfolio Preview](./assets/readme_desktop_1.png)
-
 |                                           |                                           |
 | ----------------------------------------- | ----------------------------------------- |
 | <img src="./assets/readme_desktop_1.png"> | <img src="./assets/readme_desktop_2.png"> |
-| <img src="./assets/readme_mobile_1.png"> | <img src="./assets/readme_mobile_2.png"> |
+| <img src="./assets/readme_mobile_1.png">  | <img src="./assets/readme_mobile_2.png">  |
 
 
 ## ✨ Features
