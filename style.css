@@ -26,34 +26,58 @@
 }
 
 .gray-100 {
-  filter: invert(100%) sepia(9%) saturate(4579%) hue-rotate(180deg) brightness(92%) contrast(98%);
+  color: var(--gray-100);
 }
 
 .gray-200 {
-  filter: invert(80%) sepia(7%) saturate(261%) hue-rotate(185deg) brightness(98%) contrast(90%);
+  color: var(--gray-200);
 }
 
 .gray-300 {
-  filter: invert(66%) sepia(8%) saturate(657%) hue-rotate(186deg) brightness(84%) contrast(86%);
+  color: var(--gray-300);
+}
+
+.gray-400 {
+  color: var(--gray-400);
+}
+
+.gray-500 {
+  color: var(--gray-500);
+}
+
+.gray-600 {
+  color: var(--gray-600);
 }
 
 .red {
+  color: var(--red);
+}
+
+.icon-gray-200 {
+  filter: invert(80%) sepia(7%) saturate(261%) hue-rotate(185deg) brightness(98%) contrast(90%);
+}
+
+.icon-gray-300 {
+  filter: invert(66%) sepia(8%) saturate(657%) hue-rotate(186deg) brightness(84%) contrast(86%);
+}
+ 
+.icon-red {
   filter: invert(39%) sepia(73%) saturate(595%) hue-rotate(309deg) brightness(121%) contrast(97%);
 }
 
-.purple {
+.icon-purple {
   filter: invert(68%) sepia(66%) saturate(4987%) hue-rotate(234deg) brightness(100%) contrast(84%);
 }
 
-.blue {
+.icon-blue {
   filter: invert(68%) sepia(30%) saturate(6094%) hue-rotate(179deg) brightness(88%) contrast(94%);
 }
 
-.green {
+.icon-green {
   filter: invert(70%) sepia(25%) saturate(839%) hue-rotate(49deg) brightness(91%) contrast(89%);
 }
 
-.yellow {
+.icon-yellow {
   filter: invert(88%) sepia(73%) saturate(591%) hue-rotate(316deg) brightness(95%) contrast(92%);
 }
 
@@ -80,7 +104,6 @@
 }
 
 .subtitle {
-  color: var(--gray-200);
   font-family: var(--incosolata);
   font-size: 20px;
   line-height: 120%;
@@ -218,5 +241,44 @@ body {
 
     }
     
+  }
+}
+
+#services {
+  background-color: var(--gray-600);
+    height: 480px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  > header {
+    width: 1040px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .services-container {
+    display: flex;
+    gap: 24px;
+
+    .service-card {
+      width: 280px;
+      height: 155px;
+      border: 2px solid var(--gray-500);
+      border-radius: 12px;
+      padding: 20px;
+
+      img {
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        margin-bottom: 8px;
+      }
+    }
   }
 }
